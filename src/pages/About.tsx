@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion'
 import { Eye, Target, Users, Award, Shield, Lightbulb } from 'lucide-react'
+import team1 from '../assets/team1.jpg'
+import team2 from '../assets/team2.jpg'
+import team3 from '../assets/team3.jpg'
+import team4 from '../assets/team4.jpg'
 
 export function About() {
   return (
@@ -256,10 +260,10 @@ export function About() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {[
-                  { name: "Johne Doe", role: "Creative", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" },
-                  { name: "Jennifer", role: "Programmer", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
-                  { name: "Christean", role: "CEO", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
-                  { name: "Kerinele rase", role: "Manager", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" }
+                  { name: "Johne Doe", role: "Creative", img: team1 },
+                  { name: "Jennifer", role: "Programmer", img: team2 },
+                  { name: "Christean", role: "CEO", img: team3 },
+                  { name: "Kerinele rase", role: "Manager", img: team4 }
                 ].map((member, i) => (
                   <motion.div 
                     key={i}
