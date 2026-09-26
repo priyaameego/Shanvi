@@ -1,0 +1,134 @@
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from '@tanstack/react-router'
+import { ArrowRight } from 'lucide-react'
+
+// Professional Corporate/Recruitment Images
+const slides = [
+  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop", // Executive leadership / business meeting
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop", // Professional corporate team
+  "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2000&auto=format&fit=crop", // Recruitment / interview
+  "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=2000&auto=format&fit=crop", // Diverse professionals
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop"  // Premium modern office
+]
+
+
+
+export function Hero() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }, 6000) // 6 seconds per slide
+    return () => clearInterval(timer)
+  }, [])
+
+  return (
+    <section className="relative w-full h-[85vh] md:h-[95vh] min-h-[600px] flex items-center overflow-hidden bg-navy-950">
+      
+      {/* Cinematic Image Slider */}
+      <AnimatePresence initial={false}>
+        <motion.div
+          key={currentSlide}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="absolute inset-0 z-0 overflow-hidden"
+        >
+          <motion.img 
+            initial={{ scale: 1.0 }}
+            animate={{ scale: 1.1 }}
+            transition={{ duration: 10, ease: "linear" }}
+            src={slides[currentSlide]} 
+            alt="Corporate Scene" 
+            className="w-full h-full object-cover origin-center"
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Layered Cinematic Overlay */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-navy-950/80 via-navy-950/40 to-navy-950/95 mix-blend-multiply" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy-950/90 via-navy-950/30 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent opacity-60" />
+
+
+
+      {/* Content */}
+      <div className="container mx-auto px-6 md:px-12 relative z-20 pt-20">
+        <div className="max-w-[700px]">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            className="text-gold uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-sm font-semibold mb-6 font-sans"
+          >
+            PREMIUM EXECUTIVE SEARCH
+          </motion.p>
+          
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+            className="font-serif leading-[1.1] mb-10 text-[clamp(48px,6vw,90px)]"
+          >
+            <span className="text-white block">Defining the Future of</span>
+            <span className="italic text-ivory/90 font-light block">Leadership.</span>
+          </motion.h1>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row gap-5 items-stretch sm:items-center"
+          >
+            <Link
+              to="/ourservices"
+              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-ivory text-navy-950 text-xs md:text-sm uppercase tracking-widest font-semibold overflow-hidden transition-transform hover:-translate-y-1 duration-300 border-b-2 border-transparent hover:border-gold"
+            >
+              <span className="relative z-10">DISCOVER OUR SERVICES</span>
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </Link>
+            <Link
+              to="/aboutus"
+              className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white text-xs md:text-sm uppercase tracking-widest font-semibold hover:border-gold hover:bg-white/10 transition-all duration-300"
+            >
+              OUR PHILOSOPHY
+              <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
+          </motion.div>
+        </div>
+      </div>
+      
+      {/* Slider Controls */}
+      <div className="absolute bottom-12 right-6 md:right-12 z-20 flex items-center gap-4 text-white font-sans text-sm tracking-widest">
+        <span>{String(currentSlide + 1).padStart(2, '0')}</span>
+        <div className="w-16 md:w-32 h-[1px] bg-white/20 relative">
+          <motion.div 
+            key={currentSlide}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            transition={{ duration: 6, ease: "linear" }}
+            className="absolute top-0 left-0 h-full bg-gold"
+          />
+        </div>
+        <span className="text-white/50">{String(slides.length).padStart(2, '0')}</span>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-12 left-6 md:left-12 z-20 flex flex-col items-center gap-3">
+        <span className="text-[10px] text-white/50 uppercase tracking-[0.2em] rotate-180" style={{ writingMode: 'vertical-rl' }}>
+          SCROLL TO EXPLORE
+        </span>
+        <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
+          <motion.div
+            animate={{ y: [0, 50, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-0 left-0 w-full h-1/2 bg-gold"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
