@@ -263,15 +263,15 @@ export function Clients() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-20 bg-navy-950 text-white text-center">
+      <section className="py-24 bg-ivory text-center border-t border-gold/10">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">Join Our Growing Client Network</h2>
-          <p className="text-gray-300 font-sans max-w-xl mx-auto mb-8 text-lg">
+          <h2 className="text-3xl md:text-4xl font-serif mb-4 text-navy-900">Join Our Growing Client Network</h2>
+          <p className="text-navy-700 font-sans max-w-xl mx-auto mb-8 text-lg">
             As we continue to evolve and expand our horizons, we look forward to adding your esteemed organization to our list of satisfied clients.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-10 py-4 bg-gold text-white font-sans font-semibold uppercase tracking-widest text-sm hover:bg-gold-light transition-colors"
+            className="inline-flex items-center px-10 py-4 bg-navy-900 text-white font-sans font-semibold uppercase tracking-widest text-sm hover:bg-gold transition-colors duration-300"
           >
             Partner With Us
           </a>

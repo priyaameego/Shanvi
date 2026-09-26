@@ -1,7 +1,10 @@
-import { motion } from 'framer-motion'
-import { MapPin, Phone, Mail, Clock, Users, Building } from 'lucide-react'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react'
 
 export function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <div className="w-full">
       <section className="relative pt-40 pb-32 bg-navy-950 text-white overflow-hidden">
@@ -110,47 +113,74 @@ export function Contact() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="flex flex-col space-y-8 justify-between"
+              className="bg-white p-6 sm:p-12 md:p-16 shadow-2xl border border-gray-100 relative"
             >
-              <div className="bg-navy-900 text-white p-16 text-center shadow-2xl relative overflow-hidden group flex-1 flex flex-col justify-center">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-navy-800 to-navy-950 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="relative z-10">
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/5 mb-8 border border-white/10 group-hover:border-gold/30 transition-colors duration-500">
-                    <Users className="text-gold" size={32} />
-                  </div>
-                  <h3 className="text-3xl md:text-4xl font-serif mb-4">Job Seekers</h3>
-                  <div className="w-12 h-[1px] bg-gold mx-auto mb-6" />
-                  <p className="text-gray-300 font-sans mb-10 font-light">Grow your career with us. Our experts helps you.</p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/career" className="px-8 py-4 bg-gold text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white hover:text-navy-900 transition-colors duration-300">
-                      Current Jobs
-                    </a>
-                    <a href="/career#register" className="px-8 py-4 bg-transparent border border-white/30 text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white/10 hover:border-white transition-colors duration-300">
-                      Register Now
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <h2 className="text-4xl font-serif text-navy-900 mb-8 border-b border-gold/30 pb-6">Send a Message</h2>
+              <AnimatePresence mode="wait">
+                {isSubmitted ? (
+                  <motion.div
+                    key="thank-you"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="flex flex-col items-center justify-center text-center py-16 bg-navy-50/50 rounded-xl border border-gold/20"
+                  >
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-soft mb-6">
+                      <CheckCircle className="text-gold" size={40} />
+                    </div>
+                    <h3 className="text-3xl font-serif text-navy-900 mb-4">Thank You!</h3>
+                    <p className="text-navy-700 font-sans text-lg font-light max-w-md mx-auto">
+                      Your message has been successfully sent. Our team will get back to you shortly.
+                    </p>
+                    <button 
+                      onClick={() => setIsSubmitted(false)}
+                      className="mt-8 px-8 py-3 border border-navy-900 text-navy-900 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-navy-900 hover:text-white transition-colors duration-300 rounded-sm"
+                    >
+                      Send Another Message
+                    </button>
+                  </motion.div>
+                ) : (
+                  <motion.form 
+                    key="form"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="space-y-6" 
+                    onSubmit={(e) => { e.preventDefault(); setIsSubmitted(true); }}
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">First Name</label>
+                        <input type="text" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors font-sans rounded-sm" placeholder="John" required />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Last Name</label>
+                        <input type="text" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors font-sans rounded-sm" placeholder="Doe" required />
+                      </div>
+                    </div>
 
-              <div className="bg-white p-16 text-center shadow-2xl border border-gold/10 relative overflow-hidden group hover:border-gold/30 transition-colors duration-500 flex-1 flex flex-col justify-center">
-                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="relative z-10">
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-900/5 mb-8 border border-navy-900/10 group-hover:border-gold/30 transition-colors duration-500">
-                    <Building className="text-navy-900 group-hover:text-gold transition-colors duration-500" size={32} />
-                  </div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-navy-900 mb-4">Clients</h3>
-                  <div className="w-12 h-[1px] bg-gold mx-auto mb-6" />
-                  <p className="text-navy-700 font-sans mb-10 font-light">Inquire about our professional services &amp; discuss what you require.</p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/ourservices" className="px-8 py-4 bg-navy-900 text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-gold transition-colors duration-300">
-                      Services
-                    </a>
-                    <a href="/contact" className="px-8 py-4 bg-transparent border border-navy-900/30 text-navy-900 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-navy-900 hover:text-white transition-colors duration-300">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Email Address</label>
+                        <input type="email" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors font-sans rounded-sm" placeholder="john@example.com" required />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Phone Number</label>
+                        <input type="tel" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors font-sans rounded-sm" placeholder="+91 98765 43210" required />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Message</label>
+                      <textarea rows={5} className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors font-sans rounded-sm resize-none" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" className="w-full bg-navy-900 text-white font-sans font-semibold uppercase tracking-[0.2em] text-sm py-5 hover:bg-gold transition-colors duration-300 mt-8 rounded-sm flex items-center justify-center group">
+                      Submit Message
+                      <svg className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                  </motion.form>
+                )}
+              </AnimatePresence>
             </motion.div>
             
           </div>

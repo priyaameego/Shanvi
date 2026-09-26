@@ -35,7 +35,7 @@ export function Footer() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-navy-900/50 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none" />
 
       {/* Top CTA Banner */}
-      <div className="border-b border-white/5 relative z-10">
+      <div className="bg-[#081526] border-b border-white/5 relative z-10 shadow-lg">
         <div className="container mx-auto px-6 md:px-12 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="max-w-xl text-center lg:text-left">

@@ -155,8 +155,8 @@ export function Career() {
 
       {/* Register / Submit Resume */}
       <section className="py-32 bg-ivory" id="register">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="max-w-4xl mx-auto bg-white p-12 md:p-20 shadow-2xl rounded-3xl border border-gray-100 relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-12">
+          <div className="max-w-4xl mx-auto bg-white p-6 sm:p-12 md:p-20 shadow-2xl rounded-3xl border border-gray-100 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 h-48 bg-gold/10 rounded-bl-full pointer-events-none" />
             
             <div className="text-center mb-12 relative z-10">
@@ -199,7 +199,7 @@ export function Career() {
                 </div>
               </div>
 
-              <button className="w-full bg-navy-900 text-white font-sans font-semibold uppercase tracking-[0.2em] text-sm py-5 hover:bg-gold transition-colors duration-300 mt-4 rounded-sm flex items-center justify-center group">
+              <button type="submit" className="w-full bg-navy-900 text-white font-sans font-semibold uppercase tracking-[0.2em] text-sm py-5 hover:bg-gold transition-colors duration-300 mt-8 rounded-sm flex items-center justify-center group">
                 Submit Profile
                 <ArrowRight size={18} className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300" />
               </button>

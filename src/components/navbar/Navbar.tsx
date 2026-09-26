@@ -56,7 +56,7 @@ export function Navbar() {
         scrolled ? "py-2" : "py-3 border-b border-white/10"
       )}>
         <Link to="/" className="flex items-center">
-          <img src={logoUrl} alt="Shanvi Global" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply transition-all duration-300" />
+          <img src={logoUrl} alt="Shanvi Global" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply contrast-[1.2] brightness-[1.1] scale-[1.2] md:scale-[1.4] origin-left transition-all duration-300" />
         </Link>
 
         {/* Desktop Nav */}
