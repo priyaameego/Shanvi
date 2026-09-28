@@ -8,8 +8,16 @@ export function CustomCursor() {
   })
 
   const [isHovering, setIsHovering] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
 
   useEffect(() => {
+    // Check if device supports touch
+    const checkTouch = () => {
+      setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0)
+    }
+    checkTouch()
+    window.addEventListener('resize', checkTouch)
+
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
@@ -29,8 +37,11 @@ export function CustomCursor() {
     return () => {
       window.removeEventListener('mousemove', updateMousePosition)
       window.removeEventListener('mouseover', updateHoverState)
+      window.removeEventListener('resize', checkTouch)
     }
   }, [])
+
+  if (isTouchDevice) return null
 
   return (
     <>

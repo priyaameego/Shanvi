@@ -84,13 +84,13 @@ export function Home() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:col-span-7 relative z-10"
+              className="lg:col-span-7 relative z-10 mt-12 lg:mt-0"
             >
               <div className="relative aspect-square lg:aspect-[5/4] w-full max-w-[600px] ml-auto">
                 <div className="absolute top-10 -left-10 w-full h-full border border-gold/30 z-0 rounded-2xl hidden md:block" />
                 <div className="absolute inset-0 bg-navy-900 rounded-2xl overflow-hidden shadow-2xl z-10 group">
                   <img 
-                    src="https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?auto=format&fit=crop&q=80" 
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80" 
                     alt="Professional Team" 
                     className="object-cover w-full h-full opacity-90 transform group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out"
                   />
@@ -215,7 +215,7 @@ export function Home() {
               <div className="absolute -inset-4 bg-ivory rounded-3xl -rotate-3 z-0 hidden md:block" />
               <div className="absolute -inset-4 bg-gold/10 rounded-3xl rotate-3 z-0 hidden md:block" />
               <div className="aspect-[4/3] bg-navy-950 overflow-hidden relative shadow-2xl z-10 group rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="About Us" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" alt="About Us" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>
@@ -334,7 +334,7 @@ export function Home() {
                   <div className="flex items-center gap-6 border-t border-white/10 pt-8 relative z-10">
                     <div className="relative">
                       <div className="absolute inset-0 border-2 border-gold rounded-full scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
-                      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" alt="Marc Cooper" className="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 relative z-10" />
+                      <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" alt="Marc Cooper" className="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 relative z-10" />
                     </div>
                     <div>
                       <h4 className="font-serif text-xl text-white mb-1">Marc Cooper</h4>
@@ -361,7 +361,7 @@ export function Home() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="bg-navy-900 text-white p-16 md:p-20 text-center shadow-2xl rounded-3xl relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1000&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-luminosity group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-luminosity group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-900/90 to-navy-900/80" />
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white/5 backdrop-blur-sm mb-10 border border-white/10 group-hover:border-gold/50 group-hover:bg-gold/10 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 shadow-xl">
