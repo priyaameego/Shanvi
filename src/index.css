@@ -18,6 +18,11 @@
     font-family: 'Manrope', 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    cursor: none;
+  }
+
+  a, button, input, .cursor-pointer {
+    cursor: none !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -47,17 +52,56 @@
   }
 }
 
+::selection {
+  background: #C9A646;
+  color: #fff;
+}
+
+/* Noise Overlay for Luxury Texture */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.8;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #F5F2EA;
+  background: #F5F1E8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #829ab1;
-  border-radius: 4px;
+  background: #C9A646;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #627d98;
+  background: #8F7440;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }

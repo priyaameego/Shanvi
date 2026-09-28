@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router';
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -8,25 +9,25 @@ const clients = [
   {
     category: 'MANUFACTURING',
     title: 'Auto & Engineering',
-    img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
     desc: 'Precision engineering & automotive manufacturing solutions'
   },
   {
     category: 'MANUFACTURING',
     title: 'Heavy Industries',
-    img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Steel, metals & heavy machinery manufacturing'
   },
   {
     category: 'MANUFACTURING',
     title: 'Electronics & Assemblies',
-    img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
     desc: 'Electronics components and circuit board manufacturing'
   },
   {
     category: 'MANUFACTURING',
     title: 'Textile & Apparel',
-    img: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
     desc: 'Garment and textile manufacturing facilities'
   },
 
@@ -34,25 +35,25 @@ const clients = [
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Pharmaceutical Research',
-    img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
     desc: 'Drug research, development & clinical trials'
   },
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Luxury Hotels & Resorts',
-    img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
     desc: 'World-class hospitality & hotel management'
   },
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Medical Devices',
-    img: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
     desc: 'Surgical instruments and medical device manufacturing'
   },
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'F&B & Catering',
-    img: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Food & beverage industry and institutional catering'
   },
 
@@ -60,25 +61,25 @@ const clients = [
   {
     category: 'FMCG',
     title: 'Consumer Goods',
-    img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
     desc: 'Packaged consumer goods and personal care'
   },
   {
     category: 'FMCG',
     title: 'Food & Beverages',
-    img: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
     desc: 'Processed food and bottled beverage brands'
   },
   {
     category: 'FMCG',
     title: 'Retail & Distribution',
-    img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
     desc: 'Retail chains and last-mile distribution networks'
   },
   {
     category: 'FMCG',
     title: 'FMCG Supply Chain',
-    img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
     desc: 'Logistics, warehousing and supply chain management'
   },
 
@@ -86,25 +87,25 @@ const clients = [
   {
     category: 'OIL & GAS, POWER',
     title: 'Oil & Gas Exploration',
-    img: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
     desc: 'Upstream oil exploration and drilling operations'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Power Generation',
-    img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Thermal, solar and wind energy generation plants'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Refineries',
-    img: 'https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
     desc: 'Petroleum refining and petrochemical facilities'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Renewable Energy',
-    img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
     desc: 'Solar farms, wind turbines and clean energy projects'
   },
 
@@ -112,25 +113,25 @@ const clients = [
   {
     category: 'INFRASTRUCTURE',
     title: 'Civil & Construction',
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
     desc: 'Roads, bridges and large-scale civil construction'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Real Estate',
-    img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
     desc: 'Residential, commercial and industrial real estate'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Smart Cities & Urban Dev',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
     desc: 'Smart infrastructure and urban development projects'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Telecom & IT Infra',
-    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Telecom towers, data centers and IT infrastructure'
   },
 ]
@@ -145,35 +146,41 @@ export function Clients() {
   return (
     <div className="w-full">
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-navy-950 text-white relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-navy-900/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4" />
+      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+        
+        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
+          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Our Clientele Background" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
         </div>
-        <div className="container mx-auto px-6 md:px-12 text-center relative z-10">
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-gold uppercase tracking-[0.3em] text-sm font-sans mb-4"
-          >
-            Trusted by Industry Leaders
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-serif mb-6"
-          >
-            Our Clientele
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-300 max-w-2xl mx-auto font-sans text-lg"
-          >
-            Strategic partnerships built on trust, transparency, and a shared commitment to success.
-          </motion.p>
+        <div className="container mx-auto px-6 md:px-12 relative z-10">
+          <div className="max-w-3xl">
+            <motion.nav 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
+            >
+              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-navy-300">•</span>
+              <span className="text-navy-900 font-semibold">Clients</span>
+            </motion.nav>
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+            >
+              Our Clientele
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+            >
+              Strategic partnerships built on trust, transparency, and a shared commitment to success.
+            </motion.p>
+          </div>
         </div>
       </section>
 
@@ -195,7 +202,7 @@ export function Clients() {
       </section>
 
       {/* Filter + Grid */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
 
           {/* Category Filter Tabs */}
@@ -204,7 +211,7 @@ export function Clients() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-3 text-xs uppercase tracking-widest font-sans font-semibold transition-all duration-200 flex-shrink-0
+                className={`px-5 py-3 text-xs uppercase tracking-widest font-sans font-semibold transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-200 flex-shrink-0
                   ${activeCategory === cat
                     ? 'bg-navy-950 text-white'
                     : 'bg-white text-navy-700 hover:bg-navy-50 hover:text-navy-900'
@@ -236,21 +243,21 @@ export function Clients() {
                     <img
                       src={client.img}
                       alt={client.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+                      className="w-full h-full object-cover transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
                     />
                   </div>
 
                   {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex flex-col justify-end p-5">
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity ease-[cubic-bezier(0.22,1,0.36,1)] duration-400 flex flex-col justify-end p-5">
                     <span className="text-gold text-xs uppercase tracking-widest font-sans mb-1">
                       {client.category}
                     </span>
                     <h3 className="text-white font-serif text-lg mb-1">{client.title}</h3>
-                    <p className="text-gray-300 font-sans text-xs leading-relaxed">{client.desc}</p>
+                    <p className="text-navy-700 font-sans text-xs leading-relaxed">{client.desc}</p>
                   </div>
 
                   {/* Bottom label (always visible) */}
-                  <div className="p-4 bg-white border-t border-gray-100">
+                  <div className="p-4 bg-white text-navy-900 border-t border-gray-100">
                     <h3 className="font-serif text-navy-900 text-sm">{client.title}</h3>
                     <p className="text-gold text-xs uppercase tracking-wider font-sans mt-0.5">{client.category}</p>
                   </div>
@@ -271,7 +278,7 @@ export function Clients() {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-10 py-4 bg-navy-900 text-white font-sans font-semibold uppercase tracking-widest text-sm hover:bg-gold transition-colors duration-300"
+            className="inline-flex items-center px-10 py-4 bg-navy-900 text-white font-sans font-semibold uppercase tracking-widest text-sm hover:bg-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
           >
             Partner With Us
           </a>

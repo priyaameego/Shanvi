@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react'
 
 // Professional Corporate/Recruitment Images
 const slides = [
-  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop", // Executive leadership / business meeting
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop", // Professional corporate team
-  "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2000&auto=format&fit=crop", // Recruitment / interview
-  "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=2000&auto=format&fit=crop", // Diverse professionals
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop"  // Premium modern office
+  "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2000&auto=format&fit=crop", // Indian corporate team
+  "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2000&auto=format&fit=crop", // Indian meeting
+  "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2000&auto=format&fit=crop", // Indian corporate woman
+  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop", // Indian professionals
+  "https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=2000&auto=format&fit=crop"  // Indian recruitment
 ]
 
 
@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           className="absolute inset-0 z-0 overflow-hidden"
         >
           <motion.img 
@@ -61,7 +61,7 @@ export function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1],  }}
             className="text-gold uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-sm font-semibold mb-6 font-sans"
           >
             PREMIUM EXECUTIVE SEARCH
@@ -70,7 +70,7 @@ export function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1],  }}
             className="font-serif leading-[1.1] mb-10 text-[clamp(48px,6vw,90px)]"
           >
             <span className="text-white block">Defining the Future of</span>
@@ -80,22 +80,22 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1],  }}
             className="flex flex-col sm:flex-row gap-5 items-stretch sm:items-center"
           >
             <Link
               to="/ourservices"
-              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-ivory text-navy-950 text-xs md:text-sm uppercase tracking-widest font-semibold overflow-hidden transition-transform hover:-translate-y-1 duration-300 border-b-2 border-transparent hover:border-gold"
+              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-ivory text-navy-950 text-xs md:text-sm uppercase tracking-widest font-semibold overflow-hidden transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 duration-700 border-b-2 border-transparent hover:border-gold"
             >
               <span className="relative z-10">DISCOVER OUR SERVICES</span>
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
             </Link>
             <Link
               to="/aboutus"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white text-xs md:text-sm uppercase tracking-widest font-semibold hover:border-gold hover:bg-white/10 transition-all duration-300"
+              className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white text-xs md:text-sm uppercase tracking-widest font-semibold hover:border-gold hover:bg-white/10 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
             >
               OUR PHILOSOPHY
-              <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
             </Link>
           </motion.div>
         </div>
@@ -124,7 +124,7 @@ export function Hero() {
         <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
           <motion.div
             animate={{ y: [0, 50, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 2, repeat: Infinity, ease: [0.22, 1, 0.36, 1] }}
             className="absolute top-0 left-0 w-full h-1/2 bg-gold"
           />
         </div>

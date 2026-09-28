@@ -1,4 +1,9 @@
-import { Link } from '@tanstack/react-router'
+const fs = require('fs');
+const path = require('path');
+
+const footerPath = path.join(__dirname, 'src', 'components', 'footer', 'Footer.tsx');
+
+const newFooterContent = `import { Link } from '@tanstack/react-router'
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 import logoUrl from '../../assets/shanvi.jpg'
 
@@ -185,3 +190,6 @@ export function Footer() {
     </footer>
   )
 }
+`;
+
+fs.writeFileSync(footerPath, newFooterContent, 'utf8');

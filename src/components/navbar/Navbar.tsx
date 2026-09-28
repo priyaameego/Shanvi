@@ -3,7 +3,7 @@ import { Link } from '@tanstack/react-router'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '../../lib/utils'
-import logoUrl from '../../assets/sg1.png'
+import logoUrl from '../../assets/shanvi.jpg'
 
 const links: { href: string; label: string; external?: boolean }[] = [
   { href: '/', label: 'Home' },
@@ -30,7 +30,7 @@ export function Navbar() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col',
-        scrolled ? 'bg-ivory backdrop-blur-md shadow-soft border-b border-navy-900/5' : 'bg-ivory border-b border-navy-900/5'
+        scrolled ? 'bg-white backdrop-blur-md shadow-soft border-b border-navy-900/5' : 'bg-white border-b border-navy-900/5'
       )}
     >
       {/* Alert Bar */}
@@ -40,10 +40,10 @@ export function Navbar() {
       )}>
         <div className="flex items-center gap-6">
           <a href="tel:+919871500770" className="flex items-center gap-2 hover:text-gold transition-colors">
-            <span className="text-gold">✆</span> +91 - 9871500770
+            <span className="text-gold">Γ£å</span> +91 - 9871500770
           </a>
           <a href="https://www.shanviglobal.com" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-2 hover:text-gold transition-colors">
-            <span className="text-gold">🌐</span> www.shanviglobal.com
+            <span className="text-gold">≡ƒîÉ</span> www.shanviglobal.com
           </a>
         </div>
         <div className="hidden md:flex gap-4">
@@ -52,11 +52,11 @@ export function Navbar() {
       </div>
 
       <div className={cn(
-        "container mx-auto px-6 md:px-12 flex items-center justify-between transition-all duration-300",
-        scrolled ? "py-2" : "py-3 border-b border-white/10"
+        "container mx-auto px-6 md:px-12 flex items-center justify-between transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700",
+        scrolled ? "py-2" : "py-4"
       )}>
-        <Link to="/" className="flex items-center h-14 md:h-16 py-1">
-          <img src={logoUrl} alt="Shanvi Global" className="h-full w-auto object-contain transition-all duration-300" />
+        <Link to="/" className="flex items-center mix-blend-multiply transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 h-12 md:h-14">
+          <img src={logoUrl} alt="Shanvi Global" className={cn("w-auto object-contain transition-all duration-700 h-full scale-[1.3] md:scale-[1.5] origin-left")} style={{ clipPath: 'inset(15% 0 20% 0)' }} />
         </Link>
 
         {/* Desktop Nav */}
@@ -66,21 +66,21 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="group relative text-xs md:text-sm font-semibold uppercase tracking-widest text-navy-900 hover:text-gold transition-colors duration-500"
+                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-gold transition-colors duration-500"
                 target="_blank"
                 rel="noreferrer"
               >
                 {link.label}
-                <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full"></span>
               </a>
             ) : (
               <Link
                 key={link.href}
                 to={link.href as any}
-                className="group relative text-xs md:text-sm font-semibold uppercase tracking-widest text-navy-900 hover:text-gold transition-colors duration-500 [&.active]:text-gold"
+                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-gold transition-colors duration-500 [&.active]:text-gold"
               >
                 {link.label}
-                <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full [.active_&]:w-full"></span>
+                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full [.active_&]:w-full"></span>
               </Link>
             )
           ))}

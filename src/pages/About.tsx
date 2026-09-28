@@ -1,30 +1,45 @@
 import { motion } from 'framer-motion'
+import { Link } from '@tanstack/react-router'
 import { Eye, Target, Users, Award, Shield, Lightbulb } from 'lucide-react'
-import team1 from '../assets/team1.jpg'
-import team2 from '../assets/team2.jpg'
-import team3 from '../assets/team3.jpg'
-import team4 from '../assets/team4.jpg'
 
 export function About() {
   return (
     <div className="w-full">
-      <section className="pt-32 pb-20 bg-navy-950 text-white">
-        <div className="container mx-auto px-6 md:px-12 text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-serif mb-6"
-          >
-            About Us
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-300 max-w-3xl mx-auto font-sans text-lg"
-          >
-            A dynamic and innovative force in the realm of talent acquisition.
-          </motion.p>
+      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+        
+        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
+        </div>
+        <div className="container mx-auto px-6 md:px-12 relative z-10">
+          <div className="max-w-3xl">
+            <motion.nav 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
+            >
+              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-navy-300">•</span>
+              <span className="text-navy-900 font-semibold">About Us</span>
+            </motion.nav>
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+            >
+              About Us
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+            >
+              A dynamic and innovative force in the realm of talent acquisition.
+            </motion.p>
+          </div>
         </div>
       </section>
 
@@ -45,7 +60,7 @@ export function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      <section className="py-24 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-serif text-navy-900 mb-12 text-center">Our Founder</h2>
@@ -66,7 +81,7 @@ export function About() {
               </div>
               <div className="relative aspect-[3/4] bg-navy-900 shadow-soft">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" 
                   alt="Ms. Anupama - Founder" 
                   className="w-full h-full object-cover opacity-90 mix-blend-luminosity"
                 />
@@ -88,16 +103,16 @@ export function About() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-navy-900/50 p-12 border border-white/10 relative overflow-hidden"
+              viewport={{ once: true, margin: "-10%" }}
+              className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
             >
-              <Eye className="absolute top-12 right-12 text-white/5" size={120} />
+              <Eye className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/20 text-gold mb-8">
                   <Eye size={32} />
                 </div>
-                <h3 className="text-3xl font-serif mb-6">Our Vision</h3>
-                <p className="text-gray-300 font-sans leading-relaxed text-lg">
+                <h3 className="text-3xl font-serif mb-6 text-navy-900">Our Vision</h3>
+                <p className="text-navy-700 font-sans leading-relaxed text-lg">
                   To be the foremost catalyst in shaping successful careers and fostering organizational growth by delivering unparalleled staffing solutions globally. We envision a future where every talent finds its perfect match, propelling businesses to new heights of success.
                 </p>
               </div>
@@ -106,17 +121,17 @@ export function About() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-10%" }}
               transition={{ delay: 0.2 }}
-              className="bg-navy-900/50 p-12 border border-white/10 relative overflow-hidden"
+              className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
             >
-              <Target className="absolute top-12 right-12 text-white/5" size={120} />
+              <Target className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/20 text-gold mb-8">
                   <Target size={32} />
                 </div>
-                <h3 className="text-3xl font-serif mb-6">Mission Statement</h3>
-                <p className="text-gray-300 font-sans leading-relaxed text-lg">
+                <h3 className="text-3xl font-serif mb-6 text-navy-900">Mission Statement</h3>
+                <p className="text-navy-700 font-sans leading-relaxed text-lg">
                   Our mission at Shanvi Global Staffing Services is to create lasting value for our clients and candidates. Through reliable, flexible, and personalized staffing solutions, we aim to exceed expectations, promote organizational excellence, and contribute to the overall advancement of the industries we serve.
                 </p>
               </div>
@@ -141,11 +156,11 @@ export function About() {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, margin: "-10%" }}
                   transition={{ delay: i * 0.1 }}
-                  className="bg-white p-10 text-center shadow-soft border border-gray-100 hover:border-gold/50 transition-colors duration-300"
+                  className="bg-white text-navy-900 p-10 text-center shadow-soft border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 text-navy-900 mb-6 mx-auto">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 text-white mb-6 mx-auto">
                     <value.icon size={36} />
                   </div>
                   <h3 className="text-xl font-serif text-navy-900 mb-4">{value.title}</h3>
@@ -158,11 +173,11 @@ export function About() {
       </section>
 
       {/* Why Choose Us (Merged Legacy + PDF) */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      <section className="py-24 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
           
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl font-serif text-navy-900 mb-6">Why Choose Shanvi Global?</h2>
+            <h2 className="text-4xl font-serif text-white mb-6">Why Choose Shanvi Global?</h2>
             <p className="text-navy-700 font-sans text-lg leading-relaxed">
               We have a well-demonstrated track record of delivering high-value, low-cost outsourcing process solutions that can highly benefit your business. The specialty of our services is that the solutions delivered by us convert into long term strategic advantages for our clients.
             </p>
@@ -179,9 +194,9 @@ export function About() {
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-10%" }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-ivory p-8 border border-gray-100 hover:border-gold/50 transition-colors"
+                className="bg-ivory p-8 border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
                 <h3 className="text-xl font-serif text-navy-900 mb-4">{item.title}</h3>
                 <p className="text-navy-700 font-sans leading-relaxed text-sm">{item.desc}</p>
@@ -203,7 +218,7 @@ export function About() {
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-10%" }}
                     className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
@@ -225,7 +240,7 @@ export function About() {
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-10%" }}
                     className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
@@ -236,7 +251,7 @@ export function About() {
 
               <div className="bg-navy-950 p-8 text-white shadow-soft">
                 <h4 className="font-serif text-xl mb-4 text-gold">The Shanvi Advantage</h4>
-                <ul className="space-y-3 font-sans text-sm text-gray-300">
+                <ul className="space-y-3 font-sans text-sm text-navy-700">
                   <li>✦ 10+ Years Experience in Recruitment</li>
                   <li>✦ 4,00,000+ Active Candidate Database from our region</li>
                   <li>✦ Effective, Efficient &amp; Result Oriented Recruitment Process</li>
@@ -260,21 +275,21 @@ export function About() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {[
-                  { name: "Johne Doe", role: "Creative", img: team1 },
-                  { name: "Jennifer", role: "Programmer", img: team2 },
-                  { name: "Christean", role: "CEO", img: team3 },
-                  { name: "Kerinele rase", role: "Manager", img: team4 }
+                  { name: "Arjun Sharma", role: "Creative Director", img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80' },
+                  { name: "Priya Patel", role: "Lead Programmer", img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=800&q=80' },
+                  { name: "Rahul Verma", role: "CEO", img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80' },
+                  { name: "Neha Singh", role: "HR Manager", img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?auto=format&fit=crop&w=800&q=80' }
                 ].map((member, i) => (
                   <motion.div 
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-10%" }}
                     transition={{ delay: i * 0.1 }}
                     className="text-center group"
                   >
                     <div className="overflow-hidden mb-6 aspect-[4/5]">
-                      <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" />
+                      <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 scale-100 group-hover:scale-[1.02]" />
                     </div>
                     <h4 className="text-xl font-serif text-navy-900 mb-1">{member.name}</h4>
                     <span className="text-sm font-sans uppercase tracking-widest text-gold">{member.role}</span>
