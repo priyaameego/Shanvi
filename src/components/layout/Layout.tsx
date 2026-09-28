@@ -1,7 +1,7 @@
 import { Outlet, useRouterState } from '@tanstack/react-router'
 import { Navbar } from '../navbar/Navbar'
 import { Footer } from '../footer/Footer'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export function Layout() {
   const pathname = useRouterState({ select: (s) => s.location.pathname })
