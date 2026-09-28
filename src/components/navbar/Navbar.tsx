@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from '@tanstack/react-router'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Phone, Globe } from 'lucide-react'
 import { cn } from '../../lib/utils'
 import logoUrl from '../../assets/shanvi.jpg'
 
@@ -40,10 +40,10 @@ export function Navbar() {
       )}>
         <div className="flex items-center gap-6">
           <a href="tel:+919871500770" className="flex items-center gap-2 hover:text-gold transition-colors">
-            <span className="text-gold">Γ£å</span> +91 - 9871500770
+            <Phone size={14} className="text-gold" /> +91 - 9871500770
           </a>
           <a href="https://www.shanviglobal.com" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-2 hover:text-gold transition-colors">
-            <span className="text-gold">≡ƒîÉ</span> www.shanviglobal.com
+            <Globe size={14} className="text-gold" /> www.shanviglobal.com
           </a>
         </div>
         <div className="hidden md:flex gap-4">
