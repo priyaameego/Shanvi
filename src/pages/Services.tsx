@@ -6,7 +6,7 @@ export function Services() {
     <div className="w-full">
       <section className="relative pt-40 pb-32 bg-navy-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" alt="Services Background" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1666718623430-da207b018ea3?q=80&w=2000&auto=format&fit=crop" alt="Services Background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/40" />
         </div>
         <div className="container mx-auto px-6 md:px-12 text-center relative z-10">

@@ -3,7 +3,7 @@ import { Link } from '@tanstack/react-router'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '../../lib/utils'
-import logoUrl from '../../assets/sg.jpg'
+import logoUrl from '../../assets/sg1.png'
 
 const links: { href: string; label: string; external?: boolean }[] = [
   { href: '/', label: 'Home' },
@@ -55,8 +55,8 @@ export function Navbar() {
         "container mx-auto px-6 md:px-12 flex items-center justify-between transition-all duration-300",
         scrolled ? "py-2" : "py-3 border-b border-white/10"
       )}>
-        <Link to="/" className="flex items-center">
-          <img src={logoUrl} alt="Shanvi Global" className="h-12 md:h-14 w-auto object-contain mix-blend-multiply contrast-[1.2] brightness-[1.1] scale-[1.2] md:scale-[1.4] origin-left transition-all duration-300" />
+        <Link to="/" className="flex items-center h-14 md:h-16 py-1">
+          <img src={logoUrl} alt="Shanvi Global" className="h-full w-auto object-contain transition-all duration-300" />
         </Link>
 
         {/* Desktop Nav */}

@@ -215,7 +215,7 @@ export function Home() {
               <div className="absolute -inset-4 bg-ivory rounded-3xl -rotate-3 z-0 hidden md:block" />
               <div className="absolute -inset-4 bg-gold/10 rounded-3xl rotate-3 z-0 hidden md:block" />
               <div className="aspect-[4/3] bg-navy-950 overflow-hidden relative shadow-2xl z-10 group rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="About Us" className="w-full h-full object-cover opacity-90 transform group-hover:scale-105 transition-transform duration-[3s] ease-out" />
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1200&auto=format&fit=crop" alt="About Us" className="w-full h-full object-cover opacity-90 transform group-hover:scale-105 transition-transform duration-[3s] ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>

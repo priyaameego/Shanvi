@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
-import logoUrl from '../../assets/sg.jpg'
+import logoUrl from '../../assets/sg1.png'
 
 // Inline SVG social icons (lucide-react v1.48+ removed social icons)
 const FacebookIcon = () => (
@@ -58,7 +58,7 @@ export function Footer() {
           {/* Brand Info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Link to="/" className="inline-block mb-8 bg-white/5 p-3 rounded-sm hover:bg-white/10 transition-colors">
-              <img src={logoUrl} alt="Shanvi Global" className="h-12 w-auto object-contain mix-blend-screen" />
+              <img src={logoUrl} alt="Shanvi Global" className="h-12 w-auto object-contain" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-8 pr-4">
               Connecting exceptional talent with unparalleled opportunities globally. Strategic partnerships built on trust, transparency, and a shared commitment to success.
@@ -180,7 +180,7 @@ export function Footer() {
             <p>&copy; {new Date().getFullYear()} Shanvi Global Recruitment Services. All rights reserved.</p>
           </div>
           <div className="text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
-            <p>Developed By - <a href="https://ravargroup.com" className="text-gold hover:text-gold-light transition-colors hover:underline">Ravar Group</a></p>
+            <p>Developed By - <a href="https://ameegolabs.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-gold-light transition-colors hover:underline">Ameego Labs</a></p>
           </div>
         </div>
       </div>
