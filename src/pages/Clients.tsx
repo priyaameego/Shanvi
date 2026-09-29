@@ -9,25 +9,25 @@ const clients = [
   {
     category: 'MANUFACTURING',
     title: 'Auto & Engineering',
-    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1596495577943-421112ee56c2?q=80&w=800&auto=format&fit=crop',
     desc: 'Precision engineering & automotive manufacturing solutions'
   },
   {
     category: 'MANUFACTURING',
     title: 'Heavy Industries',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?q=80&w=800&auto=format&fit=crop',
     desc: 'Steel, metals & heavy machinery manufacturing'
   },
   {
     category: 'MANUFACTURING',
     title: 'Electronics & Assemblies',
-    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
     desc: 'Electronics components and circuit board manufacturing'
   },
   {
     category: 'MANUFACTURING',
     title: 'Textile & Apparel',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
     desc: 'Garment and textile manufacturing facilities'
   },
 
@@ -35,7 +35,7 @@ const clients = [
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Pharmaceutical Research',
-    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1582750433449-648ed127d09e?q=80&w=800&auto=format&fit=crop',
     desc: 'Drug research, development & clinical trials'
   },
   {
@@ -47,13 +47,13 @@ const clients = [
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Medical Devices',
-    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1621252179027-9d784a6018bf?q=80&w=800&auto=format&fit=crop',
     desc: 'Surgical instruments and medical device manufacturing'
   },
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'F&B & Catering',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
     desc: 'Food & beverage industry and institutional catering'
   },
 
@@ -61,25 +61,25 @@ const clients = [
   {
     category: 'FMCG',
     title: 'Consumer Goods',
-    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
     desc: 'Packaged consumer goods and personal care'
   },
   {
     category: 'FMCG',
     title: 'Food & Beverages',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?q=80&w=800&auto=format&fit=crop',
     desc: 'Processed food and bottled beverage brands'
   },
   {
     category: 'FMCG',
     title: 'Retail & Distribution',
-    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1604732646637-293699c2d159?q=80&w=800&auto=format&fit=crop',
     desc: 'Retail chains and last-mile distribution networks'
   },
   {
     category: 'FMCG',
     title: 'FMCG Supply Chain',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop',
     desc: 'Logistics, warehousing and supply chain management'
   },
 
@@ -87,25 +87,25 @@ const clients = [
   {
     category: 'OIL & GAS, POWER',
     title: 'Oil & Gas Exploration',
-    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1573167582101-7667ffeb8a5d?q=80&w=800&auto=format&fit=crop',
     desc: 'Upstream oil exploration and drilling operations'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Power Generation',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1542314831-c53cd3b8534f?q=80&w=800&auto=format&fit=crop',
     desc: 'Thermal, solar and wind energy generation plants'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Refineries',
-    img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1587840171670-8b850147754e?q=80&w=800&auto=format&fit=crop',
     desc: 'Petroleum refining and petrochemical facilities'
   },
   {
     category: 'OIL & GAS, POWER',
     title: 'Renewable Energy',
-    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1596495577943-421112ee56c2?q=80&w=800&auto=format&fit=crop',
     desc: 'Solar farms, wind turbines and clean energy projects'
   },
 
@@ -113,25 +113,25 @@ const clients = [
   {
     category: 'INFRASTRUCTURE',
     title: 'Civil & Construction',
-    img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop',
     desc: 'Roads, bridges and large-scale civil construction'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Real Estate',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
     desc: 'Residential, commercial and industrial real estate'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Smart Cities & Urban Dev',
-    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop',
     desc: 'Smart infrastructure and urban development projects'
   },
   {
     category: 'INFRASTRUCTURE',
     title: 'Telecom & IT Infra',
-    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1620803450974-949392e21de3?q=80&w=800&auto=format&fit=crop',
     desc: 'Telecom towers, data centers and IT infrastructure'
   },
 ]

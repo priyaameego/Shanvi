@@ -5,6 +5,7 @@ import a1Img from '../assets/a1.png'
 import a2Img from '../assets/a2.png'
 import a3Img from '../assets/a3.png'
 import annupamImg from '../assets/annupam.png'
+import a5Img from '../assets/a5.png'
 
 export function About() {
   return (
@@ -283,7 +284,7 @@ export function About() {
                   { name: "Arjun Sharma", role: "Creative Director", img: a1Img },
                   { name: "Priya Patel", role: "Lead Programmer", img: a2Img },
                   { name: "Rahul Verma", role: "CEO", img: a3Img },
-                  { name: "Neha Singh", role: "HR Manager", img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?auto=format&fit=crop&w=800&q=80' }
+                  { name: "Neha Singh", role: "HR Manager", img: a5Img }
                 ].map((member, i) => (
                   <motion.div 
                     key={i}
