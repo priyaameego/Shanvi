@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: #F5F1E8; /* Warm Ivory */
-    --foreground: #0B1B32; /* Deep Navy */
+    --background: #FFFFFF;
+    --foreground: #465467; /* Body text */
   }
 
   html {
@@ -30,11 +30,11 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/80 border border-white/20 shadow-glass;
+    @apply bg-background/80 border border-border-light shadow-glass;
   }
   
   .glass-nav {
-    @apply bg-white/90 border-b border-navy-900/5;
+    @apply bg-background/90 border-b border-navy-900/5;
   }
 
   .glass-dark {
@@ -45,8 +45,8 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-navy-900 to-navy-600;
   }
   
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-dark via-gold to-gold-light;
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-dark via-accent to-accent-light;
   }
 
   .gpu-layer {
@@ -56,7 +56,7 @@
 }
 
 ::selection {
-  background: #C9A646;
+  background: #C6A15B;
   color: #fff;
 }
 
@@ -65,13 +65,13 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F5F1E8;
+  background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C9A646;
+  background: #C6A15B;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8F7440;
+  background: #D8BD82;
 }
 

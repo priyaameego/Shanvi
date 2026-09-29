@@ -29,12 +29,12 @@ export function Career() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
+      <section className="relative pt-28 pb-10 bg-background overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -42,17 +42,17 @@ export function Career() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
+              className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-gold/50 mx-1">•</span>
-              <span className="text-gold font-semibold tracking-[0.25em]">Career</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
+              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <span className="text-[#13294B]">Career</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
             >
               Careers
             </motion.h1>
@@ -60,7 +60,7 @@ export function Career() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-muted font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               Grow your career with us. Explore exciting opportunities and let our experts help you navigate your professional journey.
             </motion.p>
@@ -69,7 +69,7 @@ export function Career() {
       </section>
 
       {/* Why Shanvi Section */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-background">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center max-w-4xl mx-auto mb-20">
             <motion.h2 
@@ -78,15 +78,15 @@ export function Career() {
               
               className="text-4xl md:text-5xl font-serif text-navy-900 mb-6"
             >
-              Why Choose <span className="text-gold italic font-light">Shanvi?</span>
+              Why Choose <span className="text-accent italic font-light">Shanvi?</span>
             </motion.h2>
-            <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
+            <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               
               transition={{ delay: 0.2 }}
-              className="text-navy-700 font-sans text-lg leading-relaxed font-light"
+              className="text-charcoal font-sans text-lg leading-relaxed font-light"
             >
               We believe that finding the right career path is about more than just matching skills to a job description. It's about aligning values, culture, and long-term goals. Here is why top talent trusts us.
             </motion.p>
@@ -104,13 +104,13 @@ export function Career() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="bg-ivory p-12 text-center rounded-sm border border-gray-100 shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 text-center rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
-                <div className="w-16 h-16 rounded-full bg-white text-navy-900 flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000">
-                  <CheckCircle className="text-gold" size={28} />
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 text-[#0CBF9F] mx-auto mb-6 group-hover:bg-[#0CBF9F] group-hover:text-white transition-colors duration-300">
+                  <CheckCircle size={28} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-2xl font-serif text-navy-900 mb-4">{feature.title}</h3>
-                <p className="text-navy-700 font-sans font-light leading-relaxed">{feature.desc}</p>
+                <p className="text-charcoal font-sans font-light leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -118,8 +118,8 @@ export function Career() {
       </section>
 
       {/* Current Openings */}
-      <section className="py-32 bg-navy-950 text-white relative overflow-hidden" id="current-jobs">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
+      <section className="py-32 bg-background text-navy-900 relative overflow-hidden" id="current-jobs">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
         
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -130,13 +130,13 @@ export function Career() {
                 
                 className="text-4xl md:text-5xl font-serif mb-6"
               >
-                Current <span className="text-gold italic font-light">Openings</span>
+                Current <span className="text-accent italic font-light">Openings</span>
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 
-                className="w-24 h-[2px] bg-gold origin-left"
+                className="w-24 h-[2px] bg-accent origin-left"
               />
             </div>
             <motion.p 
@@ -157,18 +157,18 @@ export function Career() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className="bg-white text-navy-900 border border-gray-100 p-6 md:p-10 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:border-gold/30 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group rounded-sm flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-start md:items-center"
+                className="group relative bg-white border border-[#E4EAF0] p-8 md:p-10 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] hover:border-[#0CBF9F]/30 transition-all duration-300 rounded-[24px] flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-start md:items-center"
               >
                 <div className="flex-1">
-                  <h3 className="text-2xl font-serif mb-3 group-hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">{job.title}</h3>
+                  <h3 className="text-2xl font-serif mb-3 group-hover:text-accent transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">{job.title}</h3>
                   <div className="flex flex-wrap gap-4 text-sm font-sans text-navy-600 mb-4 font-light uppercase tracking-[0.1em]">
-                    <span className="flex items-center gap-1.5"><MapPin size={14} className="text-gold" /> {job.location}</span>
-                    <span className="flex items-center gap-1.5"><Clock size={14} className="text-gold" /> {job.type}</span>
+                    <span className="flex items-center gap-1.5"><MapPin size={14} className="text-accent" /> {job.location}</span>
+                    <span className="flex items-center gap-1.5"><Clock size={14} className="text-accent" /> {job.type}</span>
                   </div>
-                  <p className="text-navy-700 font-sans font-light leading-relaxed">{job.desc}</p>
+                  <p className="text-charcoal font-sans font-light leading-relaxed">{job.desc}</p>
                 </div>
                 <div className="flex-shrink-0 w-full md:w-auto">
-                  <a href="#register" className="inline-block text-center w-full md:w-auto px-8 py-4 bg-navy-900 border border-transparent text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-gold hover:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 rounded-sm whitespace-nowrap">
+                  <a href="#register" className="group inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white text-xs md:text-sm uppercase tracking-[0.1em] font-bold transition-all duration-250 rounded-[12px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] hover:-translate-y-[2px] hover:bg-[#0A9F84] whitespace-nowrap w-full md:w-auto">
                     Apply Now
                   </a>
                 </div>
@@ -179,45 +179,45 @@ export function Career() {
       </section>
 
       {/* Register / Submit Resume */}
-      <section className="py-32 bg-ivory" id="register">
+      <section className="py-32 bg-background" id="register">
         <div className="container mx-auto px-4 md:px-12">
-          <div className="max-w-4xl mx-auto bg-white text-navy-900 p-6 sm:p-12 md:p-20 shadow-2xl rounded-sm border border-gray-100 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-gold/10 rounded-bl-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto bg-white p-6 sm:p-12 md:p-20 border border-[#E4EAF0] rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-accent/10 rounded-bl-full pointer-events-none" />
             
             <div className="text-center mb-12 relative z-10">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 mb-8 shadow-sm">
-                <Upload className="text-gold" size={32} />
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 text-[#0CBF9F] mb-8 shadow-sm">
+                <Upload size={32} className="text-[#0CBF9F]" />
               </div>
-              <h2 className="text-4xl font-serif text-navy-900 mb-4">Register Your <span className="text-gold italic font-light">Profile</span></h2>
-              <p className="text-navy-700 font-sans font-light text-lg">Don't see a role that fits? Submit your resume and our experts will contact you when a matching opportunity arises.</p>
+              <h2 className="text-4xl font-serif text-navy-900 mb-4">Register Your <span className="text-accent italic font-light">Profile</span></h2>
+              <p className="text-charcoal font-sans font-light text-lg">Don't see a role that fits? Submit your resume and our experts will contact you when a matching opportunity arises.</p>
             </div>
 
             <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">First Name</label>
-                  <input type="text" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] font-sans rounded-sm" placeholder="John" />
+                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="John" />
                 </div>
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Last Name</label>
-                  <input type="text" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] font-sans rounded-sm" placeholder="Doe" />
+                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="Doe" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Email Address</label>
-                  <input type="email" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] font-sans rounded-sm" placeholder="john@example.com" />
+                  <input type="email" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="john@example.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Phone Number</label>
-                  <input type="tel" className="w-full bg-ivory border border-gray-200 px-6 py-4 focus:outline-none focus:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] font-sans rounded-sm" placeholder="+91 98765 43210" />
+                  <input type="tel" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="+91 98765 43210" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Upload Resume</label>
-                <label className="w-full bg-ivory border-2 border-dashed border-gray-300 px-6 py-12 text-center rounded-sm hover:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] cursor-pointer group flex flex-col items-center justify-center relative block">
+                <label className="w-full bg-[#F6F8FB] border-2 border-dashed border-[#E4EAF0] px-6 py-12 text-center rounded-[12px] hover:border-[#0CBF9F] hover:bg-[#EEF8F6] transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center relative block">
                   <input 
                     type="file" 
                     className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" 
@@ -226,14 +226,14 @@ export function Career() {
                   />
                   {fileName ? (
                     <>
-                      <FileText className="mx-auto text-gold mb-4" size={32} />
-                      <p className="text-navy-700 font-sans font-medium">{fileName}</p>
-                      <p className="text-xs text-gold mt-2 font-medium">Click to change file</p>
+                      <FileText className="mx-auto text-accent mb-4" size={32} />
+                      <p className="text-charcoal font-sans font-medium">{fileName}</p>
+                      <p className="text-xs text-accent mt-2 font-medium">Click to change file</p>
                     </>
                   ) : (
                     <>
-                      <Briefcase className="mx-auto text-navy-600 mb-4 group-hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]" size={32} />
-                      <p className="text-navy-700 font-sans font-light">Drag and drop your resume here, or <span className="text-gold font-semibold tracking-[0.25em]">browse</span></p>
+                      <Briefcase className="mx-auto text-navy-600 mb-4 group-hover:text-accent transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]" size={32} />
+                      <p className="text-charcoal font-sans font-light">Drag and drop your resume here, or <span className="text-accent font-semibold tracking-[0.25em]">browse</span></p>
                       <p className="text-xs text-navy-600 mt-2">Supported formats: PDF, DOC, DOCX (Max 5MB)</p>
                     </>
                   )}
@@ -243,10 +243,10 @@ export function Career() {
               <button 
                 type="submit" 
                 disabled={isSubmitting || isSubmitted}
-                className={`w-full text-white font-sans font-semibold uppercase tracking-[0.2em] text-sm py-5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 mt-8 rounded-sm flex items-center justify-center group ${
-                  isSubmitted ? 'bg-green-600 cursor-default' : 
-                  isSubmitting ? 'bg-navy-700 cursor-wait' : 
-                  'bg-navy-900 hover:bg-gold'
+                className={`w-full font-sans font-bold uppercase tracking-[0.1em] text-sm py-5 transition-all duration-300 mt-8 rounded-[12px] flex items-center justify-center group ${
+                  isSubmitted ? 'bg-[#18A889] text-white cursor-default' : 
+                  isSubmitting ? 'bg-[#102A43] text-white cursor-wait' : 
+                  'bg-[#0CBF9F] text-white hover:bg-[#0A9F84] hover:-translate-y-1 shadow-[0_6px_18px_rgba(21,154,131,0.18)]'
                 }`}
               >
                 {isSubmitted ? (
@@ -257,7 +257,7 @@ export function Career() {
                 ) : isSubmitting ? (
                   <>
                     Submitting...
-                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin ml-3" />
+                    <div className="w-4 h-4 border-2 border-border-light border-t-white rounded-full animate-spin ml-3" />
                   </>
                 ) : (
                   <>

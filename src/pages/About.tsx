@@ -10,12 +10,12 @@ import a5Img from '../assets/a5.png'
 export function About() {
   return (
     <div className="w-full">
-      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
+      <section className="relative pt-28 pb-10 bg-white overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -23,17 +23,17 @@ export function About() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
+              className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-gold/50 mx-1">•</span>
-              <span className="text-gold font-semibold tracking-[0.25em]">About Us</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
+              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <span className="text-[#13294B]">About Us</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
             >
               About Us
             </motion.h1>
@@ -41,7 +41,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-muted font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               A dynamic and innovative force in the realm of talent acquisition.
             </motion.p>
@@ -49,16 +49,18 @@ export function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-ivory">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <p className="text-navy-700 leading-relaxed text-lg font-sans">
+      <section className="py-20 bg-[#F6F8FB] relative overflow-hidden">
+        <div className="container mx-auto px-6 md:px-12 relative z-10">
+          <div className="max-w-5xl mx-auto bg-white p-10 md:p-16 rounded-[24px] border border-[#E4EAF0] shadow-[0_10px_30px_rgba(16,42,67,0.06)] space-y-8 text-center">
+            <h2 className="text-3xl font-serif text-[#102A43] mb-6">About Us</h2>
+            <div className="w-12 h-[2px] bg-[#C6A15B] mx-auto mb-8 rounded-full" />
+            <p className="text-charcoal leading-relaxed text-lg font-sans">
               Welcome to Shanvi Global Recruitment Services, a dynamic and innovative force in the realm of talent acquisition. Established in 2005, we have evolved into a trusted partner, adept at connecting exceptional talent with unparalleled opportunities. Our journey commenced as a local recruitment service provider, and through steadfast commitment and unwavering dedication, we have expanded our footprint to serve organizations nationwide, reaching across borders to the USA, Middle East, and LATAM countries.
             </p>
-            <p className="text-navy-700 leading-relaxed text-lg font-sans">
+            <p className="text-charcoal leading-relaxed text-lg font-sans">
               At Shanvi Global, we embody a commitment to excellence that goes beyond traditional recruitment. Our focus is on bridging the gap between top-tier professionals and organizations aspiring for success. We take pride in our rapid growth, a testament to our ability to understand the evolving dynamics of the talent landscape and provide tailored solutions.
             </p>
-            <p className="text-navy-700 leading-relaxed text-lg font-sans">
+            <p className="text-charcoal leading-relaxed text-lg font-sans">
               As a trusted partner, we stand at the forefront of connecting organizations with the right talent and empowering individuals to shape successful careers. Our dedication to innovation, coupled with a global perspective, sets us apart in the competitive realm of recruitment services. Join us on a journey where exceptional talent meets outstanding opportunities, and let Shanvi Global Recruitment Services be your gateway to success.
             </p>
           </div>
@@ -66,35 +68,35 @@ export function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-24 bg-white text-navy-900 border-t border-gray-100">
+      <section className="py-16 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-serif text-navy-900 mb-12 text-center">Our Founder</h2>
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="space-y-6">
-                <p className="text-navy-700 leading-relaxed font-sans">
+                <p className="text-charcoal leading-relaxed font-sans">
                   Meet the driving force behind Shanvi – Ms. Anupama, a stalwart in the recruitment industry, boasting over two decades of invaluable experience. Prior to the inception of Shanvi in 2003, she contributed her expertise to distinguished entities such as Life Skills, Global Staffing Services, and Areva T&amp;D.
                 </p>
-                <p className="text-navy-700 leading-relaxed font-sans">
+                <p className="text-charcoal leading-relaxed font-sans">
                   Ms. Anupama's profound knowledge spans a spectrum of industries, including but not limited to Automobiles, Hospitality, Engineering, FMCG, Oil &amp; Gas, Power, and Infrastructures. This multifaceted experience forms the bedrock of Shanvi's strategic and comprehensive approach to talent acquisition.
                 </p>
-                <p className="text-navy-700 leading-relaxed font-sans">
+                <p className="text-charcoal leading-relaxed font-sans">
                   Her academic prowess is evident through an MBA from IMT Ghaziabad, underscoring not only her practical expertise but also her commitment to continuous learning. Ms. Anupama has further honed her skills through Facilitation training conducted by Aims Insight and ISTD, enhancing her ability to navigate the dynamic landscape of recruitment with finesse.
                 </p>
-                <p className="text-navy-700 leading-relaxed font-sans">
+                <p className="text-charcoal leading-relaxed font-sans">
                   At Shanvi, Ms. Anupama's vision and leadership drive our commitment to excellence, ensuring that we not only meet but exceed the expectations of our clients. With a blend of experience, education, and a passion for delivering exceptional recruitment solutions, Ms. Anupama epitomizes the ethos of Shanvi as a trailblazer in the world of talent acquisition.
                 </p>
               </div>
-              <div className="relative aspect-[3/4] bg-navy-900 shadow-soft">
+              <div className="relative aspect-[3/4] bg-white shadow-soft">
                 <img 
                   src={annupamImg} 
                   alt="Ms. Anupama - Founder" 
-                  className="w-full h-full object-cover opacity-90 mix-blend-luminosity"
+                  className="w-full h-full object-cover opacity-90 "
                 />
-                <div className="absolute inset-0 bg-gold/10" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-950 to-transparent">
-                  <h3 className="text-2xl font-serif text-white mb-1">Ms. Anupama</h3>
-                  <p className="text-gold font-sans uppercase tracking-widest text-sm">Founder &amp; Director</p>
+                <div className="absolute inset-0 bg-accent/10" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-900 to-transparent">
+                  <h3 className="text-2xl font-serif text-navy-900 mb-1">Ms. Anupama</h3>
+                  <p className="text-accent font-sans uppercase tracking-widest text-sm">Founder &amp; Director</p>
                 </div>
               </div>
             </div>
@@ -103,22 +105,22 @@ export function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-24 bg-navy-950 text-white">
+      <section className="py-16 bg-white text-navy-900">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               
-              className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
+              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
             >
               <Eye className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/20 text-gold mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
                   <Eye size={32} />
                 </div>
                 <h3 className="text-3xl font-serif mb-6 text-navy-900">Our Vision</h3>
-                <p className="text-navy-700 font-sans leading-relaxed text-lg">
+                <p className="text-charcoal font-sans leading-relaxed text-lg">
                   To be the foremost catalyst in shaping successful careers and fostering organizational growth by delivering unparalleled staffing solutions globally. We envision a future where every talent finds its perfect match, propelling businesses to new heights of success.
                 </p>
               </div>
@@ -129,15 +131,15 @@ export function About() {
               animate={{ opacity: 1, y: 0 }}
               
               transition={{ delay: 0.2 }}
-              className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
+              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
             >
               <Target className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/20 text-gold mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
                   <Target size={32} />
                 </div>
                 <h3 className="text-3xl font-serif mb-6 text-navy-900">Mission Statement</h3>
-                <p className="text-navy-700 font-sans leading-relaxed text-lg">
+                <p className="text-charcoal font-sans leading-relaxed text-lg">
                   Our mission at Shanvi Global Staffing Services is to create lasting value for our clients and candidates. Through reliable, flexible, and personalized staffing solutions, we aim to exceed expectations, promote organizational excellence, and contribute to the overall advancement of the industries we serve.
                 </p>
               </div>
@@ -147,7 +149,7 @@ export function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-24 bg-ivory">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-serif text-navy-900 mb-16 text-center">Core Values</h2>
@@ -164,13 +166,14 @@ export function About() {
                   animate={{ opacity: 1, y: 0 }}
                   
                   transition={{ delay: i * 0.1 }}
-                  className="bg-white text-navy-900 p-10 text-center shadow-soft border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
+                  className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 text-navy-900 mb-6 mx-auto">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-[20px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-6 mx-auto group-hover:bg-accent group-hover:text-white transition-all duration-300">
                     <value.icon size={36} />
                   </div>
                   <h3 className="text-xl font-serif text-navy-900 mb-4">{value.title}</h3>
-                  <p className="text-navy-700 font-sans leading-relaxed">{value.desc}</p>
+                  <div className="w-8 h-[2px] bg-gold mb-4 rounded-full opacity-80" />
+                  <p className="text-charcoal font-sans leading-relaxed">{value.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -179,12 +182,12 @@ export function About() {
       </section>
 
       {/* Why Choose Us (Merged Legacy + PDF) */}
-      <section className="py-24 bg-white text-navy-900 border-t border-gray-100">
+      <section className="py-16 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
           
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-4xl font-serif text-navy-900 mb-6">Why Choose Shanvi Global?</h2>
-            <p className="text-navy-700 font-sans text-lg leading-relaxed">
+            <p className="text-charcoal font-sans text-lg leading-relaxed">
               We have a well-demonstrated track record of delivering high-value, low-cost outsourcing process solutions that can highly benefit your business. The specialty of our services is that the solutions delivered by us convert into long term strategic advantages for our clients.
             </p>
           </div>
@@ -202,17 +205,18 @@ export function About() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1 }}
-                className="bg-ivory p-8 border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
                 <h3 className="text-xl font-serif text-navy-900 mb-4">{item.title}</h3>
-                <p className="text-navy-700 font-sans leading-relaxed text-sm">{item.desc}</p>
+                <div className="w-8 h-[2px] bg-gold mb-4 rounded-full opacity-80" />
+                <p className="text-charcoal font-sans leading-relaxed text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
 
           <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <h3 className="text-3xl font-serif text-navy-900 mb-8 border-b border-gold/30 pb-4">Our USPs</h3>
+              <h3 className="text-3xl font-serif text-navy-900 mb-8 border-b border-accent/30 pb-4">Our USPs</h3>
               <div className="space-y-6">
                 {[
                   { title: "1. Comprehensive Industry Insight", desc: "With a profound understanding of the Recruitment Business, Shanvi navigates the intricacies of diverse industries and positions, ensuring a holistic approach to talent acquisition." },
@@ -225,17 +229,17 @@ export function About() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     
-                    className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
+                    className="group relative bg-white border border-[#E4EAF0] border-l-[4px] border-l-accent p-6 rounded-xl hover:-translate-y-1 hover:bg-[#F6F8FB] hover:shadow-[0_10px_20px_rgba(39,93,245,0.1)] transition-all duration-300"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
-                    <p className="text-navy-700 font-sans text-sm">{usp.desc}</p>
+                    <p className="text-charcoal font-sans text-sm">{usp.desc}</p>
                   </motion.div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h3 className="text-3xl font-serif text-navy-900 mb-8 border-b border-gold/30 pb-4">Commitment to Excellence</h3>
+              <h3 className="text-3xl font-serif text-navy-900 mb-8 border-b border-accent/30 pb-4">Commitment to Excellence</h3>
               <div className="space-y-6 mb-12">
                 {[
                   { title: "5. Professional Commitment", desc: "We adhere to a professional approach, ensuring unwavering commitment to our clients and their unique requirements." },
@@ -247,17 +251,17 @@ export function About() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     
-                    className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
+                    className="group relative bg-white border border-[#E4EAF0] border-l-[4px] border-l-accent p-6 rounded-xl hover:-translate-y-1 hover:bg-[#F6F8FB] hover:shadow-[0_10px_20px_rgba(39,93,245,0.1)] transition-all duration-300"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
-                    <p className="text-navy-700 font-sans text-sm">{usp.desc}</p>
+                    <p className="text-charcoal font-sans text-sm">{usp.desc}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="bg-navy-950 p-8 text-white shadow-soft">
-                <h4 className="font-serif text-xl mb-4 text-gold">The Shanvi Advantage</h4>
-                <ul className="space-y-3 font-sans text-sm text-navy-700">
+              <div className="bg-white border border-slate-200 p-8 text-navy-900 shadow-md">
+                <h4 className="font-serif text-xl mb-4 text-accent">The Shanvi Advantage</h4>
+                <ul className="space-y-3 font-sans text-sm text-charcoal">
                   <li>✦ 10+ Years Experience in Recruitment</li>
                   <li>✦ 4,00,000+ Active Candidate Database from our region</li>
                   <li>✦ Effective, Efficient &amp; Result Oriented Recruitment Process</li>
@@ -268,7 +272,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="mt-16 text-center max-w-4xl mx-auto bg-ivory p-8 border border-gold/20">
+          <div className="mt-16 text-center max-w-4xl mx-auto bg-white p-8 border border-accent/20">
              <p className="text-navy-900 font-serif text-xl italic">
                Choose Shanvi for a partner dedicated to understanding your specific needs, providing tailored solutions, and delivering exceptional results in the dynamic landscape of talent acquisition.
              </p>
@@ -298,7 +302,7 @@ export function About() {
                       <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 scale-100 group-hover:scale-[1.02]" />
                     </div>
                     <h4 className="text-xl font-serif text-navy-900 mb-1">{member.name}</h4>
-                    <span className="text-sm font-sans uppercase tracking-widest text-gold">{member.role}</span>
+                    <span className="text-sm font-sans uppercase tracking-widest text-accent">{member.role}</span>
                   </motion.div>
                 ))}
               </div>

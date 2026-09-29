@@ -5,12 +5,12 @@ import { CheckCircle, Settings, Search, Award } from 'lucide-react'
 export function Services() {
   return (
     <div className="w-full">
-      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
+      <section className="relative pt-28 pb-10 bg-white overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Services Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
+          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Services Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -18,17 +18,17 @@ export function Services() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
+              className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-gold/50 mx-1">•</span>
-              <span className="text-gold font-semibold tracking-[0.25em]">Services</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
+              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <span className="text-[#13294B]">Services</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
             >
               Services
             </motion.h1>
@@ -36,7 +36,7 @@ export function Services() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-muted font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               Shanvi Global offers Best Staffing Services &amp; Executive Recruitment
             </motion.p>
@@ -44,7 +44,7 @@ export function Services() {
         </div>
       </section>
 
-      <section className="py-32 bg-ivory">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12">
           
           <div className="text-center max-w-4xl mx-auto mb-24">
@@ -54,15 +54,15 @@ export function Services() {
               
               className="text-4xl md:text-5xl font-serif text-navy-900 mb-8"
             >
-              Our Best <span className="text-gold italic font-light">Services</span>
+              Our Best <span className="text-accent italic font-light">Services</span>
             </motion.h2>
-            <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
+            <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               
               transition={{ delay: 0.2 }}
-              className="text-navy-700 font-sans text-lg leading-relaxed font-light"
+              className="text-charcoal font-sans text-lg leading-relaxed font-light"
             >
               From our experience we have learned that every company has its own culture, values and expectations of its employees. Our workforce spread over India has one mission to fulfill, to find the right people to meet our clients' specific requirements. Key features makes us different from others, We focus on quality work to provide best recruitment services, Staffing Services.
             </motion.p>
@@ -74,25 +74,26 @@ export function Services() {
               { icon: Search, title: "Recruitment and Staffing", desc: "Our team of seasoned recruiters specializes in identifying and attracting top-tier talent tailored to the unique needs of our clients. We offer comprehensive recruitment services across various industries, ensuring a perfect fit for each role." },
               { icon: Settings, title: "Recruitment Process Outsourcing (RPO)", desc: "Our Recruitment Process Outsourcing (RPO) services redefine the hiring process, optimizing it for efficiency and effectiveness. By partnering with us for your recruitment needs, you gain access to a strategic solution that enhances your workforce management." },
               { icon: Award, title: "Executive Search", desc: "For senior-level positions, our executive search services focus on identifying and recruiting top executives who possess the leadership qualities needed to drive organizational success." },
-              { icon: CheckCircle, title: "Background Checks", desc: "At post offer stage, under background check services, we reach out to past employers and graduating institutes to verify the authenticity of the candidate's credentials on behalf of clients." }
-            ].map((service, i) => (
+              { icon: CheckCircle, title: "Background Verification", desc: "At post offer stage, under background check services, we reach out to past employers and graduating institutes to verify the authenticity of the candidate's credentials on behalf of clients." }
+            ].map((service) => (
               <motion.div 
                 key={service.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 
-                transition={{ delay: i * 0.1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="flex gap-8 bg-white text-navy-900 p-12 border border-gray-100 shadow-soft hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group relative overflow-hidden"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
-                <div className="absolute top-0 left-0 w-1 h-0 bg-gold group-hover:h-full transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 ease-out" />
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full border border-gray-100 flex items-center justify-center group-hover:border-gold/30 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 bg-navy-50">
-                    <service.icon className="text-gold group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" size={28} />
+                <div className="relative z-10 flex flex-col md:flex-row gap-8 w-full">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#0CBF9F]/20 flex items-center justify-center group-hover:bg-[#0CBF9F] transition-all duration-300">
+                      <service.icon className="text-[#0CBF9F] group-hover:text-white transition-colors duration-300" size={28} />
+                    </div>
                   </div>
+                  <div className="flex-1">
+                  <h3 className="text-2xl font-serif text-navy-900 mb-4 group-hover:text-navy-900 transition-colors duration-700">{service.title}</h3>
+                    <div className="w-8 h-[2px] bg-gold mb-4 rounded-full opacity-80" />
+                  <p className="text-charcoal font-sans leading-relaxed font-light">{service.desc}</p>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-serif text-navy-900 mb-4 group-hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">{service.title}</h3>
-                  <p className="text-navy-700 font-sans leading-relaxed font-light">{service.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -101,12 +102,12 @@ export function Services() {
           {/* Candidate Selection Process */}
           <div className="mt-40 mb-32">
             <div className="text-center max-w-4xl mx-auto mb-20">
-              <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-8">Candidate Selection <span className="text-gold italic font-light">Process</span></h2>
-              <div className="w-24 h-[1px] bg-gold mx-auto" />
+              <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-8">Candidate Selection <span className="text-accent italic font-light">Process</span></h2>
+              <div className="w-24 h-[1px] bg-accent mx-auto" />
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
-              <div className="hidden md:block absolute top-12 left-12 right-12 h-[1px] bg-gold/30 z-0"></div>
+              <div className="hidden md:block absolute top-8 left-12 right-12 h-[2px] bg-accent/20 z-0"></div>
               
               {[
                 { step: "1", title: "Assignment Understanding", points: ["Spend time comprehending key assignment pointers independently.", "Engage in detailed discussions with HR or technical manager if necessary."] },
@@ -121,16 +122,16 @@ export function Services() {
                   animate={{ opacity: 1, y: 0 }}
                   
                   transition={{ delay: i * 0.15, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                  className="relative z-10 flex flex-col items-center text-center group"
+                  className="relative z-10 flex flex-col items-center text-center group bg-white border border-[#E4EAF0] p-8 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-2 hover:border-[#0CBF9F]/30 hover:shadow-[0_20px_40px_rgba(16,42,67,0.1)] transition-all duration-500"
                 >
-                  <div className="w-24 h-24 rounded-full bg-white text-navy-900 border border-gold/30 shadow-soft flex items-center justify-center mb-8 group-hover:border-gold group-hover:bg-navy-950 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000">
-                    <span className="text-3xl font-serif text-gold font-light">{process.step}</span>
+                  <div className="w-16 h-16 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 flex items-center justify-center mb-6 group-hover:bg-[#0CBF9F] transition-colors duration-300 shadow-sm">
+                    <span className="text-2xl font-serif text-[#0CBF9F] font-bold group-hover:text-white transition-colors duration-300">{process.step}</span>
                   </div>
-                  <h3 className="text-lg font-serif text-navy-900 mb-6 h-14 flex items-center justify-center uppercase tracking-widest">{process.title}</h3>
-                  <ul className="text-left space-y-4 px-2">
+                  <h3 className="text-lg font-serif text-[#102A43] mb-6 h-14 flex items-center justify-center uppercase tracking-widest">{process.title}</h3>
+                  <ul className="text-left space-y-4 px-2 w-full">
                     {process.points.map((pt, idx) => (
-                      <li key={idx} className="flex items-start text-navy-700 font-sans text-sm font-light">
-                        <span className="text-gold mr-3 mt-1 flex-shrink-0 text-[10px]">●</span>
+                      <li key={idx} className="flex items-start text-[#475467] font-sans text-sm font-light">
+                        <span className="text-[#0CBF9F] mr-3 mt-1 flex-shrink-0 text-[10px]">●</span>
                         <span className="leading-relaxed">{pt}</span>
                       </li>
                     ))}
@@ -141,7 +142,7 @@ export function Services() {
           </div>
 
           {/* Specialized Sectors */}
-          <div className="mt-40 border-t border-gold/20 pt-32">
+          <div className="mt-40 border-t border-accent/20 pt-32">
             <div className="text-center max-w-4xl mx-auto mb-20">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
@@ -151,13 +152,13 @@ export function Services() {
               >
                 Our Specialized Sectors
               </motion.h2>
-              <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
+              <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: 0.2 }}
-                className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed"
+                className="text-charcoal font-sans text-lg md:text-xl font-light leading-relaxed"
               >
                 At Shanvi, our versatility extends across a myriad of sectors and industries, showcasing our ability to navigate diverse landscapes and deliver exceptional results. Our specialized expertise encompasses, but is not limited to:
               </motion.p>
@@ -175,10 +176,12 @@ export function Services() {
                   animate={{ opacity: 1, scale: 1 }}
                   
                   transition={{ delay: i * 0.05, duration: 0.6 }}
-                  className="bg-white text-navy-900 hover:bg-navy-950 hover:text-white transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 p-6 rounded-sm flex items-center border border-gray-100 shadow-sm hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] group"
+                  className="group relative bg-white border border-[#E4EAF0] p-4 pr-6 hover:-translate-y-1 hover:border-[#0CBF9F]/30 shadow-[0_4px_20px_rgba(16,42,67,0.04)] hover:shadow-[0_10px_30px_rgba(16,42,67,0.08)] transition-all duration-300 rounded-[16px] flex items-center"
                 >
-                  <span className="text-gold mr-4 transform group-hover:rotate-90 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000">✦</span>
-                  <span className="font-serif text-navy-900 group-hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 text-lg">{sector}</span>
+                  <div className="w-12 h-12 rounded-[12px] bg-[#EEF8F6] border border-[#0CBF9F]/10 flex items-center justify-center mr-4 group-hover:bg-[#0CBF9F] transition-colors duration-300 flex-shrink-0">
+                    <span className="text-[#0CBF9F] group-hover:text-white transform group-hover:rotate-90 transition-all duration-500 text-lg leading-none">✦</span>
+                  </div>
+                  <span className="font-serif text-[#102A43] group-hover:text-[#0CBF9F] transition-colors duration-300 text-base md:text-lg">{sector}</span>
                 </motion.div>
               ))}
             </div>
@@ -188,12 +191,12 @@ export function Services() {
               animate={{ opacity: 1, y: 0 }}
               
               transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-navy-950 p-16 md:p-20 text-center shadow-2xl relative overflow-hidden group"
+              className="bg-white p-16 md:p-20 text-center shadow-2xl relative overflow-hidden group"
             >
-              <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none group-hover:bg-gold/20 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
-              <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none group-hover:bg-gold/15 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
-              <span className="text-6xl text-gold/20 font-serif absolute top-8 left-10 leading-none">"</span>
-              <p className="text-white font-sans text-lg md:text-xl font-light leading-loose relative z-10 max-w-5xl mx-auto">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none group-hover:bg-accent/20 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none group-hover:bg-accent/15 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
+              <span className="text-6xl text-accent/20 font-serif absolute top-8 left-10 leading-none">"</span>
+              <p className="text-navy-900 font-sans text-lg md:text-xl font-light leading-loose relative z-10 max-w-5xl mx-auto">
                 Sectoral boundaries do not confine us; rather, they inspire us to delve into the intricacies of any industry we undertake. When we embark on an assignment, regardless of the sector, we meticulously understand its nuances, allowing us to source candidates strategically and effectively. Trust Shanvi for a comprehensive and tailored approach to recruitment across a spectrum of industries.
               </p>
             </motion.div>

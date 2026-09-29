@@ -30,24 +30,27 @@ export function Navbar() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col',
-        scrolled ? 'bg-white backdrop-blur-md shadow-soft border-b border-navy-900/5' : 'bg-white border-b border-navy-900/5'
+        scrolled ? 'bg-background backdrop-blur-md shadow-soft border-b border-border-light' : 'bg-background border-b border-border-light'
       )}
     >
       {/* Alert Bar */}
       <div className={cn(
-        "w-full bg-[#071426] text-white py-2 px-6 md:px-12 transition-all duration-300 flex justify-between items-center text-xs font-sans tracking-widest",
-        scrolled ? "h-0 py-0 opacity-0 overflow-hidden" : "h-auto opacity-100"
+        "w-full bg-[#0CBF9F] text-white py-2 px-6 md:px-12 transition-all duration-300 flex justify-between items-center text-xs font-sans tracking-widest",
+        scrolled ? "h-0 py-0 opacity-0 overflow-hidden border-none" : "h-auto opacity-100"
       )}>
         <div className="flex items-center gap-6">
-          <a href="tel:+919871500770" className="flex items-center gap-2 hover:text-gold transition-colors">
-            <Phone size={14} className="text-gold" /> +91 - 9871500770
+          <a href="tel:+919871500770" className="flex items-center gap-2 hover:text-white/80 transition-colors">
+            <Phone size={14} className="text-white" /> +91 - 9871500770
           </a>
-          <a href="https://www.shanviglobal.com" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-2 hover:text-gold transition-colors">
-            <Globe size={14} className="text-gold" /> www.shanviglobal.com
+          <a href="https://www.shanviglobal.com" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-2 hover:text-white/80 transition-colors">
+            <Globe size={14} className="text-white" /> www.shanviglobal.com
           </a>
         </div>
-        <div className="hidden md:flex gap-4">
-          <span className="text-gray-300 uppercase tracking-[0.15em] opacity-80 font-medium">SHANVI GLOBAL RECRUITMENT SERVICES</span>
+        <div className="hidden md:flex items-center gap-4">
+          <span className="text-white/80 uppercase tracking-[0.15em] font-medium mr-2">Follow Us</span>
+          <a href="#" className="text-white hover:text-white/80 transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" className="text-white hover:text-white/80 transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" className="text-white hover:text-white/80 transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
         </div>
       </div>
 
@@ -67,7 +70,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   to={link.href as any}
-                  className="ml-2 px-6 py-2.5 bg-navy-950 text-gold text-[10px] font-bold uppercase tracking-[0.2em] border border-gold/30 hover:bg-gold hover:text-navy-950 hover:border-gold transition-all duration-500 shadow-sm"
+                  className="ml-2 group/btn inline-flex items-center justify-center px-8 py-3 bg-[#0CBF9F] text-white text-[11px] font-bold uppercase tracking-[0.1em] rounded-[12px] shadow-[0_6px_18px_rgba(12,191,159,0.18)] hover:shadow-[0_8px_25px_rgba(12,191,159,0.25)] hover:-translate-y-[2px] hover:bg-[#0A9F84] transition-all duration-300"
                 >
                   {link.label}
                 </Link>
@@ -77,21 +80,21 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-gold transition-colors duration-500"
+                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-accent transition-colors duration-500"
                 target="_blank"
                 rel="noreferrer"
               >
                 {link.label}
-                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-accent transition-all duration-500 group-hover:w-full"></span>
               </a>
             ) : (
               <Link
                 key={link.href}
                 to={link.href as any}
-                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-gold transition-colors duration-500 [&.active]:text-gold"
+                className="group relative text-[9px] md:text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-900 hover:text-accent transition-colors duration-500 [&.active]:text-accent"
               >
                 {link.label}
-                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full [.active_&]:w-full"></span>
+                <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-accent transition-all duration-500 group-hover:w-full [.active_&]:w-full"></span>
               </Link>
             )
           })}
@@ -113,7 +116,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-white shadow-soft py-8 px-6 md:hidden flex flex-col gap-6"
+            className="absolute top-full left-0 right-0 bg-background shadow-soft py-8 px-6 md:hidden flex flex-col gap-6"
           >
             {links.map((link) => (
               link.external ? (

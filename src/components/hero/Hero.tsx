@@ -25,7 +25,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative w-full h-[85vh] md:h-[95vh] min-h-[600px] flex items-center overflow-hidden bg-navy-950">
+    <section className="relative w-full h-[85vh] md:h-[95vh] min-h-[600px] flex items-center overflow-hidden bg-navy-900">
       
       {/* Cinematic Image Slider */}
       <AnimatePresence initial={false}>
@@ -49,10 +49,10 @@ export function Hero() {
         </motion.div>
       </AnimatePresence>
 
-      {/* Layered Cinematic Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-navy-950/80 via-navy-950/40 to-navy-950/95 mix-blend-multiply" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy-950/90 via-navy-950/30 to-transparent" />
-      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent opacity-60" />
+      {/* Layered Cinematic Overlay - Lightened */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-navy-900/40 via-navy-900/10 to-navy-900/60" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy-900/60 via-navy-900/20 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent opacity-60" />
 
 
 
@@ -63,7 +63,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1],  }}
-            className="text-gold uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-sm font-semibold mb-6 font-sans"
+            className="text-accent uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-sm font-semibold mb-6 font-sans"
           >
             PREMIUM EXECUTIVE SEARCH
           </motion.p>
@@ -86,14 +86,14 @@ export function Hero() {
           >
             <Link
               to="/ourservices"
-              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-ivory text-navy-950 text-xs md:text-sm uppercase tracking-widest font-semibold overflow-hidden transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 duration-700 border-b-2 border-transparent hover:border-gold"
+              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-background text-navy-900 text-xs md:text-sm uppercase tracking-widest font-semibold overflow-hidden transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 duration-700 border-b-2 border-transparent hover:border-accent"
             >
               <span className="relative z-10">DISCOVER OUR SERVICES</span>
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
+              <div className="absolute inset-0 bg-background opacity-0 group-hover:opacity-100 transition-opacity ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
             </Link>
             <Link
               to="/aboutus"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white text-xs md:text-sm uppercase tracking-widest font-semibold hover:border-gold hover:bg-white/10 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
+              className="group flex items-center justify-center gap-3 px-8 py-4 bg-navy-900/30 backdrop-blur-sm border border-border-light text-white text-xs md:text-sm uppercase tracking-widest font-semibold hover:border-accent hover:bg-navy-900/50 hover:text-accent transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
             >
               OUR PHILOSOPHY
               <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
@@ -105,13 +105,13 @@ export function Hero() {
       {/* Slider Controls */}
       <div className="absolute bottom-12 right-6 md:right-12 z-20 flex items-center gap-4 text-white font-sans text-sm tracking-widest">
         <span>{String(currentSlide + 1).padStart(2, '0')}</span>
-        <div className="w-16 md:w-32 h-[1px] bg-white/20 relative">
+        <div className="w-16 md:w-32 h-[1px] bg-background/20 relative">
           <motion.div 
             key={currentSlide}
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 6, ease: "linear" }}
-            className="absolute top-0 left-0 h-full bg-gold"
+            className="absolute top-0 left-0 h-full bg-accent"
           />
         </div>
         <span className="text-white/50">{String(slides.length).padStart(2, '0')}</span>
@@ -122,11 +122,11 @@ export function Hero() {
         <span className="text-[10px] text-white/50 uppercase tracking-[0.2em] rotate-180" style={{ writingMode: 'vertical-rl' }}>
           SCROLL TO EXPLORE
         </span>
-        <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
+        <div className="w-[1px] h-12 bg-background/20 relative overflow-hidden">
           <motion.div
             animate={{ y: [0, 50, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute top-0 left-0 w-full h-1/2 bg-gold"
+            className="absolute top-0 left-0 w-full h-1/2 bg-accent"
           />
         </div>
       </div>
