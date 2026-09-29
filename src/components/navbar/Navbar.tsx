@@ -59,7 +59,7 @@ export function Navbar() {
         scrolled ? "py-1" : "py-2"
       )}>
         <Link to="/" className="flex items-center transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 h-12 md:h-14">
-          <img src={logoUrl} alt="Shanvi Global" fetchPriority="high" className={cn("w-auto object-contain mix-blend-multiply hover:brightness-110 transition-all duration-700 h-full scale-[1.6] md:scale-[1.8] origin-left drop-shadow-sm")} style={{ clipPath: 'inset(5% 0 5% 0)' }} />
+          <img src={logoUrl} alt="Shanvi Global" fetchPriority="high" className={cn("w-auto h-full object-contain mix-blend-multiply hover:brightness-110 transition-all duration-300 drop-shadow-sm scale-[1.5] md:scale-[1.8] origin-left")} style={{ clipPath: 'inset(14% 0 16% 0)' }} />
         </Link>
 
         {/* Desktop Nav */}

@@ -80,11 +80,7 @@ export function Home() {
               </motion.div>
             </div>
             
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 50 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              
-              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            <div 
               className="lg:col-span-7 relative z-10 mt-12 lg:mt-0"
             >
               <div className="relative aspect-square lg:aspect-[5/4] w-full max-w-[600px] ml-auto">
@@ -113,7 +109,7 @@ export function Home() {
                   <p className="text-xs font-sans text-gray-300 uppercase tracking-widest font-semibold leading-snug">Years of<br/>Excellence</p>
                 </motion.div>
               </div>
-            </motion.div>
+            </div>
 
           </div>
         </div>
@@ -205,11 +201,7 @@ export function Home() {
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95, y: 30 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              
-              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            <div 
               className="relative order-2 lg:order-1"
             >
               <div className="absolute -inset-4 bg-white rounded-3xl -rotate-3 z-0 hidden md:block" />
@@ -221,7 +213,7 @@ export function Home() {
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
