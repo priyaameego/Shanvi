@@ -60,9 +60,20 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10">
-          {links.map((link) => (
-            link.external ? (
+        <nav className="hidden md:flex items-center gap-8">
+          {links.map((link) => {
+            if (link.label === 'Contact') {
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href as any}
+                  className="ml-2 px-6 py-2.5 bg-navy-950 text-gold text-[10px] font-bold uppercase tracking-[0.2em] border border-gold/30 hover:bg-gold hover:text-navy-950 hover:border-gold transition-all duration-500 shadow-sm"
+                >
+                  {link.label}
+                </Link>
+              )
+            }
+            return link.external ? (
               <a
                 key={link.href}
                 href={link.href}
@@ -83,7 +94,7 @@ export function Navbar() {
                 <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-gold transition-all duration-500 group-hover:w-full [.active_&]:w-full"></span>
               </Link>
             )
-          ))}
+          })}
         </nav>
 
         {/* Mobile Toggle */}

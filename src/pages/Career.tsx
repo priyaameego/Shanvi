@@ -76,7 +76,7 @@ export function Career() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               
-              className="text-4xl md:text-5xl font-serif text-white mb-6"
+              className="text-4xl md:text-5xl font-serif text-navy-900 mb-6"
             >
               Why Choose <span className="text-gold italic font-light">Shanvi?</span>
             </motion.h2>
@@ -168,9 +168,9 @@ export function Career() {
                   <p className="text-navy-700 font-sans font-light leading-relaxed">{job.desc}</p>
                 </div>
                 <div className="flex-shrink-0 w-full md:w-auto">
-                  <button className="w-full md:w-auto px-8 py-4 bg-navy-900 border border-transparent text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-gold hover:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 rounded-sm whitespace-nowrap">
+                  <a href="#register" className="inline-block text-center w-full md:w-auto px-8 py-4 bg-navy-900 border border-transparent text-white font-sans font-semibold uppercase tracking-widest text-xs hover:bg-gold hover:border-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 rounded-sm whitespace-nowrap">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </motion.div>
             ))}

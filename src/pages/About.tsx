@@ -166,7 +166,7 @@ export function About() {
                   transition={{ delay: i * 0.1 }}
                   className="bg-white text-navy-900 p-10 text-center shadow-soft border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 text-white mb-6 mx-auto">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-navy-50 text-navy-900 mb-6 mx-auto">
                     <value.icon size={36} />
                   </div>
                   <h3 className="text-xl font-serif text-navy-900 mb-4">{value.title}</h3>
@@ -183,7 +183,7 @@ export function About() {
         <div className="container mx-auto px-6 md:px-12">
           
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl font-serif text-white mb-6">Why Choose Shanvi Global?</h2>
+            <h2 className="text-4xl font-serif text-navy-900 mb-6">Why Choose Shanvi Global?</h2>
             <p className="text-navy-700 font-sans text-lg leading-relaxed">
               We have a well-demonstrated track record of delivering high-value, low-cost outsourcing process solutions that can highly benefit your business. The specialty of our services is that the solutions delivered by us convert into long term strategic advantages for our clients.
             </p>

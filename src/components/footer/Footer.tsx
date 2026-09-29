@@ -29,62 +29,57 @@ const InstagramIcon = () => (
 
 export function Footer() {
   return (
-    <footer className="bg-navy-950 text-gray-300 font-sans relative overflow-hidden">
-      {/* Subtle Glows */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/3 pointer-events-none" />
+    <footer className="relative bg-navy-950 overflow-hidden pt-20 border-t border-white/5">
+      {/* Premium Background Elements */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/10 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/4" />
+      </div>
 
-      {/* Top CTA Banner */}
-      <div className="border-t border-b border-white/5 relative z-10 bg-gradient-to-r from-navy-900 via-[#0a1a33] to-navy-900">
-        <div className="container mx-auto px-6 md:px-12 py-16 lg:py-20">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="max-w-2xl text-center lg:text-left">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        
+        {/* Luxury CTA Banner */}
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy-900 via-[#0a1a33] to-navy-950 border border-gold/20 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] mb-20 group">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-gold/20 transition-colors duration-1000" />
+          <div className="px-10 py-16 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+            <div className="max-w-2xl text-center md:text-left">
               <h2 className="text-4xl md:text-5xl font-serif text-white mb-4 leading-tight">Ready to transform your workforce?</h2>
-              <p className="text-gold font-sans text-sm md:text-base tracking-[0.1em] uppercase">Join industry leaders who trust Shanvi Global.</p>
+              <p className="text-gold font-sans text-sm md:text-base tracking-[0.2em] uppercase">Join industry leaders who trust Shanvi Global.</p>
             </div>
-            <div className="flex gap-4">
-              <Link to="/contact" className="px-10 py-5 bg-gold text-white font-sans font-semibold uppercase tracking-[0.2em] text-[11px] hover:bg-white hover:text-navy-900 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 flex items-center group shadow-[0_0_30px_rgba(201,166,70,0.3)]">
-                Contact Us
-                <ArrowRight size={14} className="ml-3 group-hover:translate-x-2 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
+            <div className="flex-shrink-0">
+              <Link to="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-gold text-navy-950 font-sans font-bold uppercase tracking-[0.2em] text-xs hover:bg-white transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(201,166,70,0.4)] rounded-sm group/btn">
+                Start the journey
+                <ArrowRight size={16} className="ml-3 group-hover/btn:translate-x-2 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
               </Link>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="container mx-auto px-6 md:px-12 pt-24 pb-20 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-12">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-12 pb-20">
           
           {/* Brand Info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-4">
-            <Link to="/" className="inline-block mb-10 bg-white/95 backdrop-blur p-6 rounded-sm shadow-[0_10px_40px_rgba(0,0,0,0.3)] border border-white/20 hover:-translate-y-1 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">
-              <img src={logoUrl} alt="Shanvi Global" className="h-14 w-auto object-contain" />
+            <Link to="/" className="inline-block mb-10 bg-white/95 backdrop-blur px-6 py-4 rounded-sm shadow-[0_10px_40px_rgba(0,0,0,0.3)] hover:-translate-y-1 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 border border-white/20">
+              <img src={logoUrl} alt="Shanvi Global" className="h-12 w-auto object-contain mix-blend-multiply" style={{ clipPath: 'inset(10% 0 10% 0)' }} />
             </Link>
             <p className="text-gray-400 text-sm leading-loose mb-10 pr-8 font-light">
               Connecting exceptional talent with unparalleled opportunities globally. Strategic partnerships built on trust, transparency, and a shared commitment to long-term success.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400">
-                <FacebookIcon />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400">
-                <TwitterIcon />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400">
-                <LinkedinIcon />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400">
-                <InstagramIcon />
-              </a>
+              <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold hover:text-navy-950 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400 hover:-translate-y-1 shadow-lg"><FacebookIcon /></a>
+              <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold hover:text-navy-950 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400 hover:-translate-y-1 shadow-lg"><TwitterIcon /></a>
+              <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold hover:text-navy-950 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400 hover:-translate-y-1 shadow-lg"><LinkedinIcon /></a>
+              <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold hover:text-navy-950 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 text-gray-400 hover:-translate-y-1 shadow-lg"><InstagramIcon /></a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="lg:col-span-2 lg:col-start-6">
-            <h5 className="text-[11px] font-semibold text-white mb-10 uppercase tracking-[0.2em] flex items-center">
-              Quick Links
+            <h5 className="text-[11px] font-bold text-white mb-8 uppercase tracking-[0.2em]">
+              Company
             </h5>
-            <ul className="space-y-5 text-[13px] font-sans font-light">
+            <ul className="space-y-4 text-[13px] font-sans font-light">
               {[
                 { name: 'About Us', path: '/aboutus' },
                 { name: 'Our Services', path: '/ourservices' },
@@ -92,12 +87,9 @@ export function Footer() {
                 { name: 'Contact Us', path: '/contact' }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    to={link.path} 
-                    className="group inline-flex items-center text-gray-400 hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 relative"
-                  >
-                    <span className="relative z-10">{link.name}</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-px bg-gold transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 group-hover:w-full"></span>
+                  <Link to={link.path as any} className="group inline-flex items-center text-gray-400 hover:text-white transition-colors duration-500">
+                    <span className="w-0 overflow-hidden group-hover:w-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] text-gold">—</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">{link.name}</span>
                   </Link>
                 </li>
               ))}
@@ -106,22 +98,19 @@ export function Footer() {
 
           {/* Candidates */}
           <div className="lg:col-span-2">
-            <h5 className="text-[11px] font-semibold text-white mb-10 uppercase tracking-[0.2em] flex items-center">
+            <h5 className="text-[11px] font-bold text-white mb-8 uppercase tracking-[0.2em]">
               Candidates
             </h5>
-            <ul className="space-y-5 text-[13px] font-sans font-light">
+            <ul className="space-y-4 text-[13px] font-sans font-light">
               {[
                 { name: 'Current Openings', path: '/career#current-jobs' },
                 { name: 'Submit Resume', path: '/career#register' },
                 { name: 'Career Path', path: '/career' }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    to={link.path as any} 
-                    className="group inline-flex items-center text-gray-400 hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 relative"
-                  >
-                    <span className="relative z-10">{link.name}</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-px bg-gold transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 group-hover:w-full"></span>
+                  <Link to={link.path as any} className="group inline-flex items-center text-gray-400 hover:text-white transition-colors duration-500">
+                    <span className="w-0 overflow-hidden group-hover:w-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] text-gold">—</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">{link.name}</span>
                   </Link>
                 </li>
               ))}
@@ -130,52 +119,51 @@ export function Footer() {
 
           {/* Contact Details */}
           <div className="lg:col-span-3">
-            <h5 className="text-[11px] font-semibold text-white mb-10 uppercase tracking-[0.2em] flex items-center">
-              Contact
+            <h5 className="text-[11px] font-bold text-white mb-8 uppercase tracking-[0.2em]">
+              Get in Touch
             </h5>
-            <div className="space-y-8 text-[13px] font-light">
+            <div className="space-y-6 text-[13px] font-light">
               <a href="tel:+919871500770" className="flex items-start group">
-                <div className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center mr-5 group-hover:border-gold/30 group-hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 flex-shrink-0">
-                  <Phone size={14} className="text-gold" />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-gold group-hover:border-gold transition-all duration-500 flex-shrink-0">
+                  <Phone size={14} className="text-gold group-hover:text-navy-950 transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">
-                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold/70 mb-1 font-medium">Call Us</span>
+                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors duration-500">
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold mb-1 font-semibold">Call Us</span>
                   <span className="tracking-wider">+91 - 9871500770</span>
                 </div>
               </a>
               <a href="mailto:hiring@shanviglobal.com" className="flex items-start group">
-                <div className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center mr-5 group-hover:border-gold/30 group-hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 flex-shrink-0">
-                  <Mail size={14} className="text-gold" />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-gold group-hover:border-gold transition-all duration-500 flex-shrink-0">
+                  <Mail size={14} className="text-gold group-hover:text-navy-950 transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">
-                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold/70 mb-1 font-medium">Email Us</span>
+                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors duration-500">
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold mb-1 font-semibold">Email Us</span>
                   <span className="tracking-wider">hiring@shanviglobal.com</span>
                 </div>
               </a>
               <div className="flex items-start group">
-                <div className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center mr-5 group-hover:border-gold/30 group-hover:bg-gold/5 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 flex-shrink-0">
-                  <MapPin size={14} className="text-gold" />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-gold group-hover:border-gold transition-all duration-500 flex-shrink-0">
+                  <MapPin size={14} className="text-gold group-hover:text-navy-950 transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">
-                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold/70 mb-1 font-medium">Head Office</span>
-                  <span className="leading-relaxed">Shop No 5, Taimoor Nagar<br />New Friends Colony<br />New Delhi 110065</span>
+                <div className="pt-1 text-gray-400 group-hover:text-white transition-colors duration-500">
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-gold mb-1 font-semibold">Head Office</span>
+                  <span className="leading-relaxed">Shop No 5, Taimoor Nagar<br />New Delhi 110065</span>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       {/* Copyright Bar */}
-      <div className="border-t border-white/5 relative z-10 bg-black/20">
-        <div className="container mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-gray-500 uppercase tracking-widest font-light">
+      <div className="border-t border-white/5 bg-black/20 relative z-10">
+        <div className="container mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[10px] md:text-[11px] text-gray-500 uppercase tracking-[0.15em] font-light">
             &copy; {new Date().getFullYear()} Shanvi Global Recruitment Services. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-[11px] text-gray-500 uppercase tracking-widest font-light">
-            <Link to="/" className="hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">Privacy Policy</Link>
-            <Link to="/" className="hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700">Terms of Service</Link>
+          <div className="flex items-center gap-6 text-[10px] md:text-[11px] text-gray-500 uppercase tracking-[0.15em] font-light">
+            <Link to="/" className="hover:text-gold transition-colors duration-500">Privacy Policy</Link>
+            <Link to="/" className="hover:text-gold transition-colors duration-500">Terms of Service</Link>
           </div>
         </div>
       </div>
