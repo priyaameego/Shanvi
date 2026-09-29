@@ -25,8 +25,8 @@ export function About() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
-              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#165396] transition-colors duration-300">Home</Link>
+              <span className="text-[#165396] text-[15px] leading-none">›</span>
               <span className="text-[#13294B]">About Us</span>
             </motion.nav>
             <motion.h1 
@@ -112,11 +112,11 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               
-              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
             >
               <Eye className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#165396]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
                   <Eye size={32} />
                 </div>
                 <h3 className="text-3xl font-serif mb-6 text-navy-900">Our Vision</h3>
@@ -131,11 +131,11 @@ export function About() {
               animate={{ opacity: 1, y: 0 }}
               
               transition={{ delay: 0.2 }}
-              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+              className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
             >
               <Target className="absolute top-12 right-12 text-navy-900/5" size={120} />
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF0FF] border border-[#165396]/20 text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
                   <Target size={32} />
                 </div>
                 <h3 className="text-3xl font-serif mb-6 text-navy-900">Mission Statement</h3>
@@ -166,9 +166,9 @@ export function About() {
                   animate={{ opacity: 1, y: 0 }}
                   
                   transition={{ delay: i * 0.1 }}
-                  className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+                  className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-[20px] bg-[#EBF0FF] border border-[#0CBF9F]/20 text-accent mb-6 mx-auto group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-[20px] bg-[#EBF0FF] border border-[#165396]/20 text-accent mb-6 mx-auto group-hover:bg-accent group-hover:text-white transition-all duration-300">
                     <value.icon size={36} />
                   </div>
                   <h3 className="text-xl font-serif text-navy-900 mb-4">{value.title}</h3>
@@ -205,7 +205,7 @@ export function About() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1 }}
-                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
                 <h3 className="text-xl font-serif text-navy-900 mb-4">{item.title}</h3>
                 <div className="w-8 h-[2px] bg-gold mb-4 rounded-full opacity-80" />

@@ -44,8 +44,8 @@ export function Career() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
-              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#165396] transition-colors duration-300">Home</Link>
+              <span className="text-[#165396] text-[15px] leading-none">›</span>
               <span className="text-[#13294B]">Career</span>
             </motion.nav>
             <motion.h1 
@@ -104,10 +104,10 @@ export function Career() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 text-center rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 text-center rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 text-[#0CBF9F] mx-auto mb-6 group-hover:bg-[#0CBF9F] group-hover:text-white transition-colors duration-300">
-                  <CheckCircle size={28} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-300" />
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-[16px] bg-[#EBF2FA] border border-[#165396]/10 text-[#165396] mx-auto mb-6 group-hover:bg-[#165396] group-hover:text-white transition-colors duration-300">
+                  <CheckCircle size={28} className="text-[#165396] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-2xl font-serif text-navy-900 mb-4">{feature.title}</h3>
                 <p className="text-charcoal font-sans font-light leading-relaxed">{feature.desc}</p>
@@ -157,7 +157,7 @@ export function Career() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className="group relative bg-white border border-[#E4EAF0] p-8 md:p-10 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] hover:border-[#0CBF9F]/30 transition-all duration-300 rounded-[24px] flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-start md:items-center"
+                className="group relative bg-white border border-[#E4EAF0] p-8 md:p-10 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] hover:border-[#165396]/30 transition-all duration-300 rounded-[24px] flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-start md:items-center"
               >
                 <div className="flex-1">
                   <h3 className="text-2xl font-serif mb-3 group-hover:text-accent transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">{job.title}</h3>
@@ -168,7 +168,7 @@ export function Career() {
                   <p className="text-charcoal font-sans font-light leading-relaxed">{job.desc}</p>
                 </div>
                 <div className="flex-shrink-0 w-full md:w-auto">
-                  <a href="#register" className="group inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white text-xs md:text-sm uppercase tracking-[0.1em] font-bold transition-all duration-250 rounded-[12px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] hover:-translate-y-[2px] hover:bg-[#0A9F84] whitespace-nowrap w-full md:w-auto">
+                  <a href="#register" className="group inline-flex items-center justify-center px-8 py-4 bg-[#165396] text-white text-xs md:text-sm uppercase tracking-[0.1em] font-bold transition-all duration-250 rounded-[12px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] hover:-translate-y-[2px] hover:bg-[#104075] whitespace-nowrap w-full md:w-auto">
                     Apply Now
                   </a>
                 </div>
@@ -185,8 +185,8 @@ export function Career() {
             <div className="absolute top-0 right-0 w-48 h-48 bg-accent/10 rounded-bl-full pointer-events-none" />
             
             <div className="text-center mb-12 relative z-10">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 text-[#0CBF9F] mb-8 shadow-sm">
-                <Upload size={32} className="text-[#0CBF9F]" />
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EBF2FA] border border-[#165396]/10 text-[#165396] mb-8 shadow-sm">
+                <Upload size={32} className="text-[#165396]" />
               </div>
               <h2 className="text-4xl font-serif text-navy-900 mb-4">Register Your <span className="text-accent italic font-light">Profile</span></h2>
               <p className="text-charcoal font-sans font-light text-lg">Don't see a role that fits? Submit your resume and our experts will contact you when a matching opportunity arises.</p>
@@ -196,28 +196,28 @@ export function Career() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">First Name</label>
-                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="John" />
+                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#165396] transition-colors duration-300 font-sans rounded-[12px]" placeholder="John" />
                 </div>
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Last Name</label>
-                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="Doe" />
+                  <input type="text" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#165396] transition-colors duration-300 font-sans rounded-[12px]" placeholder="Doe" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Email Address</label>
-                  <input type="email" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="john@example.com" />
+                  <input type="email" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#165396] transition-colors duration-300 font-sans rounded-[12px]" placeholder="john@example.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Phone Number</label>
-                  <input type="tel" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#0CBF9F] transition-colors duration-300 font-sans rounded-[12px]" placeholder="+91 98765 43210" />
+                  <input type="tel" className="w-full bg-[#F6F8FB] border border-[#E4EAF0] px-6 py-4 focus:outline-none focus:border-[#165396] transition-colors duration-300 font-sans rounded-[12px]" placeholder="+91 98765 43210" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-sm font-sans font-semibold text-navy-900 mb-2 uppercase tracking-widest">Upload Resume</label>
-                <label className="w-full bg-[#F6F8FB] border-2 border-dashed border-[#E4EAF0] px-6 py-12 text-center rounded-[12px] hover:border-[#0CBF9F] hover:bg-[#EEF8F6] transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center relative block">
+                <label className="w-full bg-[#F6F8FB] border-2 border-dashed border-[#E4EAF0] px-6 py-12 text-center rounded-[12px] hover:border-[#165396] hover:bg-[#EBF2FA] transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center relative block">
                   <input 
                     type="file" 
                     className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" 
@@ -246,7 +246,7 @@ export function Career() {
                 className={`w-full font-sans font-bold uppercase tracking-[0.1em] text-sm py-5 transition-all duration-300 mt-8 rounded-[12px] flex items-center justify-center group ${
                   isSubmitted ? 'bg-[#18A889] text-white cursor-default' : 
                   isSubmitting ? 'bg-[#102A43] text-white cursor-wait' : 
-                  'bg-[#0CBF9F] text-white hover:bg-[#0A9F84] hover:-translate-y-1 shadow-[0_6px_18px_rgba(21,154,131,0.18)]'
+                  'bg-[#165396] text-white hover:bg-[#104075] hover:-translate-y-1 shadow-[0_6px_18px_rgba(21,154,131,0.18)]'
                 }`}
               >
                 {isSubmitted ? (

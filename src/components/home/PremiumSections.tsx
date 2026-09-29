@@ -9,7 +9,7 @@ export function TrustedBy() {
         <p className="text-[11px] font-sans font-bold uppercase tracking-[0.2em] text-[#6B7280] mb-8">Trusted by Leading Businesses</p>
         <div className="flex items-center justify-center flex-wrap gap-8 md:gap-16 opacity-60">
           {['TATA', 'RELIANCE', 'WIPRO', 'INFOSYS', 'HDFC', 'AMAZON'].map((brand, i) => (
-            <span key={i} className="text-xl md:text-2xl font-serif font-bold text-[#9CA3AF] hover:text-[#0CBF9F] transition-colors duration-300">{brand}</span>
+            <span key={i} className="text-xl md:text-2xl font-serif font-bold text-[#9CA3AF] hover:text-[#165396] transition-colors duration-300">{brand}</span>
           ))}
         </div>
       </div>
@@ -35,9 +35,9 @@ export function CompanyStats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="bg-white border border-[#E4EAF0] p-8 rounded-[24px] shadow-[0_4px_20px_rgba(16,42,67,0.03)] text-center group hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_10px_30px_rgba(16,42,67,0.06)] transition-all duration-300"
+              className="bg-white border border-[#E4EAF0] p-8 rounded-[24px] shadow-[0_4px_20px_rgba(16,42,67,0.03)] text-center group hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_10px_30px_rgba(16,42,67,0.06)] transition-all duration-300"
             >
-              <div className="w-14 h-14 mx-auto rounded-[14px] bg-[#EEF8F6] border border-[#0CBF9F]/10 flex items-center justify-center mb-6 group-hover:bg-[#0CBF9F] group-hover:text-white text-[#0CBF9F] transition-colors duration-300">
+              <div className="w-14 h-14 mx-auto rounded-[14px] bg-[#EBF2FA] border border-[#165396]/10 flex items-center justify-center mb-6 group-hover:bg-[#165396] group-hover:text-white text-[#165396] transition-colors duration-300">
                 {stat.icon}
               </div>
               <h3 className="text-4xl md:text-5xl font-serif text-[#102A43] mb-2">{stat.value}</h3>
@@ -64,7 +64,7 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-[#102A43] mb-6">Why Choose Shanvi Global</h2>
-          <div className="w-16 h-1 bg-[#0CBF9F] mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#165396] mx-auto rounded-full" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {features.map((feat, i) => (
@@ -74,9 +74,9 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="bg-white p-8 rounded-[24px] border border-[#E4EAF0] shadow-[0_4px_20px_rgba(16,42,67,0.03)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_10px_30px_rgba(16,42,67,0.06)] transition-all duration-300 group flex items-start gap-5"
+              className="bg-white p-8 rounded-[24px] border border-[#E4EAF0] shadow-[0_4px_20px_rgba(16,42,67,0.03)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_10px_30px_rgba(16,42,67,0.06)] transition-all duration-300 group flex items-start gap-5"
             >
-              <div className="w-12 h-12 rounded-[12px] bg-[#EEF8F6] border border-[#0CBF9F]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0CBF9F] group-hover:text-white text-[#0CBF9F] transition-colors duration-300">
+              <div className="w-12 h-12 rounded-[12px] bg-[#EBF2FA] border border-[#165396]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#165396] group-hover:text-white text-[#165396] transition-colors duration-300">
                 {feat.icon}
               </div>
               <div>
@@ -98,7 +98,7 @@ export function HiringProcess() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-serif text-[#102A43] mb-6">Our Hiring Process</h2>
-          <div className="w-16 h-1 bg-[#0CBF9F] mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#165396] mx-auto rounded-full" />
         </div>
         <div className="max-w-6xl mx-auto relative">
           <div className="hidden md:block absolute top-6 left-[8%] w-[84%] h-[2px] bg-[#E4EAF0] z-0" />
@@ -112,10 +112,10 @@ export function HiringProcess() {
                 transition={{ delay: i * 0.1, duration: 0.6 }}
                 className="text-center group"
               >
-                <div className="w-12 h-12 mx-auto rounded-full bg-white border-2 border-[#E4EAF0] flex items-center justify-center text-[#102A43] font-bold mb-4 shadow-[0_0_0_4px_white] group-hover:border-[#0CBF9F] group-hover:text-[#0CBF9F] transition-colors duration-300">
+                <div className="w-12 h-12 mx-auto rounded-full bg-white border-2 border-[#E4EAF0] flex items-center justify-center text-[#102A43] font-bold mb-4 shadow-[0_0_0_4px_white] group-hover:border-[#165396] group-hover:text-[#165396] transition-colors duration-300">
                   {i + 1}
                 </div>
-                <h4 className="font-sans font-bold text-[#102A43] text-sm uppercase tracking-[0.05em] group-hover:text-[#0CBF9F] transition-colors duration-300">{step}</h4>
+                <h4 className="font-sans font-bold text-[#102A43] text-sm uppercase tracking-[0.05em] group-hover:text-[#165396] transition-colors duration-300">{step}</h4>
               </motion.div>
             ))}
           </div>
@@ -155,7 +155,7 @@ export function TestimonialCarousel() {
               transition={{ duration: 0.6 }}
               className="absolute inset-0 bg-white p-10 md:p-14 rounded-[32px] border border-[#E4EAF0] shadow-[0_10px_30px_rgba(16,42,67,0.06)] flex flex-col items-center justify-center text-center"
             >
-              <div className="flex gap-1 text-[#0CBF9F] mb-6">
+              <div className="flex gap-1 text-[#165396] mb-6">
                 {[1,2,3,4,5].map(s => <Star key={s} size={20} fill="currentColor" />)}
               </div>
               <p className="text-[#475467] font-sans font-light text-lg md:text-xl leading-relaxed mb-8 italic">"{reviews[current].text}"</p>
@@ -174,7 +174,7 @@ export function TestimonialCarousel() {
             <button 
               key={i} 
               onClick={() => setCurrent(i)} 
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${current === i ? 'bg-[#0CBF9F] w-8' : 'bg-[#E4EAF0] hover:bg-[#0CBF9F]/50'}`} 
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${current === i ? 'bg-[#165396] w-8' : 'bg-[#E4EAF0] hover:bg-[#165396]/50'}`} 
             />
           ))}
         </div>
@@ -214,7 +214,7 @@ export function FinalCTA() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
-          <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#0A9F84] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(12,191,159,0.18)] hover:shadow-[0_8px_25px_rgba(12,191,159,0.25)] hover:-translate-y-[2px]">
+          <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#165396] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#104075] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(22,83,150,0.18)] hover:shadow-[0_8px_25px_rgba(22,83,150,0.25)] hover:-translate-y-[2px]">
             Contact Us
           </a>
           <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/30 text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-white hover:text-[#102A43] transition-all duration-300 rounded-[12px]">

@@ -161,8 +161,8 @@ export function Clients() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-3 text-[13px] font-sans font-medium mb-10"
             >
-              <Link to="/" className="text-[#6B7280] hover:text-[#0CBF9F] transition-colors duration-300">Home</Link>
-              <span className="text-[#0CBF9F] text-[15px] leading-none">›</span>
+              <Link to="/" className="text-[#6B7280] hover:text-[#165396] transition-colors duration-300">Home</Link>
+              <span className="text-[#165396] text-[15px] leading-none">›</span>
               <span className="text-[#13294B]">Clients</span>
             </motion.nav>
             <motion.h1 

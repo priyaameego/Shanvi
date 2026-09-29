@@ -35,7 +35,7 @@ export function Navbar() {
     >
       {/* Alert Bar */}
       <div className={cn(
-        "w-full bg-[#0CBF9F] text-white py-2 px-6 md:px-12 transition-all duration-300 flex justify-between items-center text-xs font-sans tracking-widest",
+        "w-full bg-[#165396] text-white py-2 px-6 md:px-12 transition-all duration-300 flex justify-between items-center text-xs font-sans tracking-widest",
         scrolled ? "h-0 py-0 opacity-0 overflow-hidden border-none" : "h-auto opacity-100"
       )}>
         <div className="flex items-center gap-6">
@@ -70,7 +70,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   to={link.href as any}
-                  className="ml-2 group/btn inline-flex items-center justify-center px-8 py-3 bg-[#0CBF9F] text-white text-[11px] font-bold uppercase tracking-[0.1em] rounded-[12px] shadow-[0_6px_18px_rgba(12,191,159,0.18)] hover:shadow-[0_8px_25px_rgba(12,191,159,0.25)] hover:-translate-y-[2px] hover:bg-[#0A9F84] transition-all duration-300"
+                  className="ml-2 group/btn inline-flex items-center justify-center px-8 py-3 bg-[#165396] text-white text-[11px] font-bold uppercase tracking-[0.1em] rounded-[12px] shadow-[0_6px_18px_rgba(22,83,150,0.18)] hover:shadow-[0_8px_25px_rgba(22,83,150,0.25)] hover:-translate-y-[2px] hover:bg-[#104075] transition-all duration-300"
                 >
                   {link.label}
                 </Link>

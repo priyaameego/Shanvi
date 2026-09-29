@@ -70,7 +70,7 @@ export function Home() {
               >
                 <a 
                   href="/aboutus"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white text-xs md:text-sm uppercase tracking-[0.1em] font-bold transition-all duration-250 rounded-[12px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] hover:-translate-y-[2px] hover:bg-[#0A9F84]"
+                  className="group inline-flex items-center justify-center px-8 py-4 bg-[#165396] text-white text-xs md:text-sm uppercase tracking-[0.1em] font-bold transition-all duration-250 rounded-[12px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] hover:-translate-y-[2px] hover:bg-[#104075]"
                 >
                   <span className="flex items-center">
                     Read More 
@@ -105,10 +105,10 @@ export function Home() {
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.8, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                  className="absolute -bottom-8 md:-left-12 bg-[#102A43] p-8 shadow-[0_20px_40px_rgba(0,0,0,0.2)] border-t-4 border-[#0CBF9F] z-30 rounded-xl max-w-[220px]"
+                  className="absolute -bottom-8 md:-left-12 bg-[#102A43] p-8 shadow-[0_20px_40px_rgba(0,0,0,0.2)] border-t-4 border-[#165396] z-30 rounded-xl max-w-[220px]"
                 >
                   <p className="text-5xl font-serif text-white mb-1 flex items-start">
-                    8<span className="text-[#0CBF9F] text-3xl mt-1">+</span>
+                    8<span className="text-[#165396] text-3xl mt-1">+</span>
                   </p>
                   <p className="text-xs font-sans text-gray-300 uppercase tracking-widest font-semibold leading-snug">Years of<br/>Excellence</p>
                 </motion.div>
@@ -141,7 +141,7 @@ export function Home() {
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-4xl md:text-6xl font-serif text-navy-900 mb-6"
               >
-                Our <span className="italic font-light text-[#0CBF9F]">Services</span>
+                Our <span className="italic font-light text-[#165396]">Services</span>
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -159,7 +159,7 @@ export function Home() {
               
               className="flex-shrink-0"
             >
-              <a href="/ourservices" className="inline-flex items-center gap-4 text-navy-900 uppercase tracking-widest text-sm font-semibold hover:text-[#0CBF9F] transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] group">
+              <a href="/ourservices" className="inline-flex items-center gap-4 text-navy-900 uppercase tracking-widest text-sm font-semibold hover:text-[#165396] transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] group">
                 View All Services
                 <div className="w-12 h-[1px] bg-navy-900 group-hover:bg-gold group-hover:w-20 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
               </a>
@@ -179,13 +179,13 @@ export function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 
                 transition={{ delay: i * 0.15, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#0CBF9F]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
+                className="group relative bg-white border border-[#E4EAF0] p-10 lg:p-12 rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] hover:-translate-y-1 hover:border-[#165396]/30 hover:shadow-[0_15px_35px_rgba(16,42,67,0.08)] transition-all duration-300"
               >
                 {/* Hover effect inside card */}
                 <div className="relative z-10 flex flex-col md:flex-row gap-8">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-[16px] bg-[#EEF8F6] border border-[#0CBF9F]/10 flex items-center justify-center group-hover:bg-[#0CBF9F] transition-colors duration-300">
-                      <service.icon size={28} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-300" />
+                    <div className="w-16 h-16 rounded-[16px] bg-[#EBF2FA] border border-[#165396]/10 flex items-center justify-center group-hover:bg-[#165396] transition-colors duration-300">
+                      <service.icon size={28} className="text-[#165396] group-hover:text-white transition-colors duration-300" />
                     </div>
                   </div>
                   <div>
@@ -363,19 +363,19 @@ export function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-white p-12 md:p-16 text-center shadow-[0_10px_30px_rgba(16,42,67,0.06)] border border-[#E4EAF0] rounded-[32px] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(16,42,67,0.1)] hover:border-[#0CBF9F]/30 transition-all duration-500 relative overflow-hidden group"
+              className="bg-white p-12 md:p-16 text-center shadow-[0_10px_30px_rgba(16,42,67,0.06)] border border-[#E4EAF0] rounded-[32px] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(16,42,67,0.1)] hover:border-[#165396]/30 transition-all duration-500 relative overflow-hidden group"
             >
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EEF8F6] mb-8 border border-[#0CBF9F]/10 group-hover:bg-[#0CBF9F] transition-all duration-500 shadow-sm">
-                  <User size={32} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-500" />
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EBF2FA] mb-8 border border-[#165396]/10 group-hover:bg-[#165396] transition-all duration-500 shadow-sm">
+                  <User size={32} className="text-[#165396] group-hover:text-white transition-colors duration-500" />
                 </div>
                 <h3 className="text-3xl font-serif text-[#102A43] mb-4">Job Seekers</h3>
                 <p className="text-[#475467] font-sans mb-10 font-light text-base leading-relaxed">Grow your career with us. Our experts helps you navigate opportunities.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="/career" className="group/btn inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#0A9F84] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(12,191,159,0.18)] hover:shadow-[0_8px_25px_rgba(12,191,159,0.25)] hover:-translate-y-[2px]">
+                  <a href="/career" className="group/btn inline-flex items-center justify-center px-8 py-4 bg-[#165396] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#104075] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(22,83,150,0.18)] hover:shadow-[0_8px_25px_rgba(22,83,150,0.25)] hover:-translate-y-[2px]">
                     Current Jobs
                   </a>
-                  <a href="/career#register" className="inline-flex items-center justify-center px-8 py-4 bg-white border border-[#E4EAF0] text-[#102A43] font-sans font-bold uppercase tracking-[0.1em] text-xs hover:border-[#0CBF9F] hover:text-[#0CBF9F] transition-all duration-300 rounded-[12px]">
+                  <a href="/career#register" className="inline-flex items-center justify-center px-8 py-4 bg-white border border-[#E4EAF0] text-[#102A43] font-sans font-bold uppercase tracking-[0.1em] text-xs hover:border-[#165396] hover:text-[#165396] transition-all duration-300 rounded-[12px]">
                     Register Now
                   </a>
                 </div>
@@ -387,19 +387,19 @@ export function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-              className="bg-white p-12 md:p-16 text-center shadow-[0_10px_30px_rgba(16,42,67,0.06)] border border-[#E4EAF0] rounded-[32px] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(16,42,67,0.1)] hover:border-[#0CBF9F]/30 transition-all duration-500 relative overflow-hidden group"
+              className="bg-white p-12 md:p-16 text-center shadow-[0_10px_30px_rgba(16,42,67,0.06)] border border-[#E4EAF0] rounded-[32px] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(16,42,67,0.1)] hover:border-[#165396]/30 transition-all duration-500 relative overflow-hidden group"
             >
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EEF8F6] mb-8 border border-[#0CBF9F]/10 group-hover:bg-[#0CBF9F] transition-all duration-500 shadow-sm">
-                  <Building size={32} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-500" />
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EBF2FA] mb-8 border border-[#165396]/10 group-hover:bg-[#165396] transition-all duration-500 shadow-sm">
+                  <Building size={32} className="text-[#165396] group-hover:text-white transition-colors duration-500" />
                 </div>
                 <h3 className="text-3xl font-serif text-[#102A43] mb-4">Clients</h3>
                 <p className="text-[#475467] font-sans mb-10 font-light text-base leading-relaxed">Inquire about our professional services & discuss your strategic requirements.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="/ourservices" className="group/btn inline-flex items-center justify-center px-8 py-4 bg-[#0CBF9F] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#0A9F84] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(12,191,159,0.18)] hover:shadow-[0_8px_25px_rgba(12,191,159,0.25)] hover:-translate-y-[2px]">
+                  <a href="/ourservices" className="group/btn inline-flex items-center justify-center px-8 py-4 bg-[#165396] text-white font-sans font-bold uppercase tracking-[0.1em] text-xs hover:bg-[#104075] transition-all duration-300 rounded-[12px] shadow-[0_6px_18px_rgba(22,83,150,0.18)] hover:shadow-[0_8px_25px_rgba(22,83,150,0.25)] hover:-translate-y-[2px]">
                     Services
                   </a>
-                  <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white border border-[#E4EAF0] text-[#102A43] font-sans font-bold uppercase tracking-[0.1em] text-xs hover:border-[#0CBF9F] hover:text-[#0CBF9F] transition-all duration-300 rounded-[12px]">
+                  <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white border border-[#E4EAF0] text-[#102A43] font-sans font-bold uppercase tracking-[0.1em] text-xs hover:border-[#165396] hover:text-[#165396] transition-all duration-300 rounded-[12px]">
                     Contact Us
                   </a>
                 </div>

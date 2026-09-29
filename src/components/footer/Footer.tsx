@@ -32,22 +32,22 @@ export function Footer() {
     <footer className="relative bg-white overflow-hidden pt-20 border-t border-[#E4EAF0]">
       {/* Premium Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#EEF8F6]/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#EEF8F6]/50 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#EBF2FA]/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#EBF2FA]/50 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
       </div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         
         {/* Luxury CTA Banner */}
         <div className="relative overflow-hidden rounded-[24px] bg-[#F6F8FB] border border-[#E4EAF0] shadow-[0_10px_30px_rgba(16,42,67,0.06)] mb-20 group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#0CBF9F]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-[#0CBF9F]/10 transition-colors duration-1000" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#165396]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-[#165396]/10 transition-colors duration-1000" />
           <div className="px-10 py-16 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
             <div className="max-w-2xl text-center md:text-left">
               <h2 className="text-4xl md:text-5xl font-serif text-[#102A43] mb-4 leading-tight">Ready to transform your workforce?</h2>
-              <p className="text-[#0CBF9F] font-sans text-sm md:text-base tracking-[0.2em] uppercase">Join industry leaders who trust Shanvi Global.</p>
+              <p className="text-[#165396] font-sans text-sm md:text-base tracking-[0.2em] uppercase">Join industry leaders who trust Shanvi Global.</p>
             </div>
             <div className="flex-shrink-0">
-              <Link to="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-[#0CBF9F] text-white font-sans font-bold uppercase tracking-[0.2em] text-xs hover:bg-[#0A9F84] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 hover:-translate-y-[2px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] rounded-[12px] group/btn">
+              <Link to="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-[#165396] text-white font-sans font-bold uppercase tracking-[0.2em] text-xs hover:bg-[#104075] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 hover:-translate-y-[2px] shadow-[0_6px_18px_rgba(21,154,131,0.18)] hover:shadow-[0_8px_25px_rgba(21,154,131,0.25)] rounded-[12px] group/btn">
                 Start the journey
                 <ArrowRight size={16} className="ml-3 group-hover/btn:translate-x-2 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-700" />
               </Link>
@@ -87,7 +87,7 @@ export function Footer() {
                 { name: 'Contact Us', path: '/contact' }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path as any} className="group inline-flex items-center text-[#475467] hover:text-[#0CBF9F] transition-colors duration-500">
+                  <Link to={link.path as any} className="group inline-flex items-center text-[#475467] hover:text-[#165396] transition-colors duration-500">
                     <span className="w-0 overflow-hidden group-hover:w-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] text-accent">—</span>
                     <span className="group-hover:translate-x-2 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">{link.name}</span>
                   </Link>
@@ -108,7 +108,7 @@ export function Footer() {
                 { name: 'Career Path', path: '/career' }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path as any} className="group inline-flex items-center text-[#475467] hover:text-[#0CBF9F] transition-colors duration-500">
+                  <Link to={link.path as any} className="group inline-flex items-center text-[#475467] hover:text-[#165396] transition-colors duration-500">
                     <span className="w-0 overflow-hidden group-hover:w-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] text-accent">—</span>
                     <span className="group-hover:translate-x-2 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">{link.name}</span>
                   </Link>
@@ -124,28 +124,28 @@ export function Footer() {
             </h5>
             <div className="space-y-6 text-[13px] font-light">
               <a href="tel:+919871500770" className="flex items-start group">
-                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#0CBF9F] group-hover:border-[#0CBF9F] transition-all duration-500 flex-shrink-0">
-                  <Phone size={14} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-500" />
+                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#165396] group-hover:border-[#165396] transition-all duration-500 flex-shrink-0">
+                  <Phone size={14} className="text-[#165396] group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-[#475467] group-hover:text-[#0CBF9F] transition-colors duration-500">
+                <div className="pt-1 text-[#475467] group-hover:text-[#165396] transition-colors duration-500">
                   <span className="block text-[10px] uppercase tracking-[0.2em] text-accent mb-1 font-semibold">Call Us</span>
                   <span className="tracking-wider">+91 - 9871500770</span>
                 </div>
               </a>
               <a href="mailto:hiring@shanviglobal.com" className="flex items-start group">
-                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#0CBF9F] group-hover:border-[#0CBF9F] transition-all duration-500 flex-shrink-0">
-                  <Mail size={14} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-500" />
+                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#165396] group-hover:border-[#165396] transition-all duration-500 flex-shrink-0">
+                  <Mail size={14} className="text-[#165396] group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-[#475467] group-hover:text-[#0CBF9F] transition-colors duration-500">
+                <div className="pt-1 text-[#475467] group-hover:text-[#165396] transition-colors duration-500">
                   <span className="block text-[10px] uppercase tracking-[0.2em] text-accent mb-1 font-semibold">Email Us</span>
                   <span className="tracking-wider">hiring@shanviglobal.com</span>
                 </div>
               </a>
               <div className="flex items-start group">
-                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#0CBF9F] group-hover:border-[#0CBF9F] transition-all duration-500 flex-shrink-0">
-                  <MapPin size={14} className="text-[#0CBF9F] group-hover:text-white transition-colors duration-500" />
+                <div className="w-10 h-10 rounded-[12px] bg-[#F6F8FB] border border-[#E4EAF0] flex items-center justify-center mr-4 group-hover:bg-[#165396] group-hover:border-[#165396] transition-all duration-500 flex-shrink-0">
+                  <MapPin size={14} className="text-[#165396] group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="pt-1 text-[#475467] group-hover:text-[#0CBF9F] transition-colors duration-500">
+                <div className="pt-1 text-[#475467] group-hover:text-[#165396] transition-colors duration-500">
                   <span className="block text-[10px] uppercase tracking-[0.2em] text-accent mb-1 font-semibold">Head Office</span>
                   <span className="leading-relaxed">Shop No 5, Taimoor Nagar<br />New Delhi 110065</span>
                 </div>

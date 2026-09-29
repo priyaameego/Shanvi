@@ -25,9 +25,9 @@ export default {
           DEFAULT: '#F1F5F9'
         },
         accent: {
-          DEFAULT: '#0CBF9F',
-          hover: '#0A9F84',
-          light: '#EEF8F6',
+          DEFAULT: '#165396',
+          hover: '#104075',
+          light: '#EBF2FA',
           green: '#18A889'
         },
         gold: {
