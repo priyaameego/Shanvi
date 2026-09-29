@@ -41,7 +41,7 @@ const clients = [
   {
     category: 'PHARMA / HOSPITALITY',
     title: 'Luxury Hotels & Resorts',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'World-class hospitality & hotel management'
   },
   {
@@ -79,7 +79,7 @@ const clients = [
   {
     category: 'FMCG',
     title: 'FMCG Supply Chain',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Logistics, warehousing and supply chain management'
   },
 
@@ -119,7 +119,7 @@ const clients = [
   {
     category: 'INFRASTRUCTURE',
     title: 'Real Estate',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
     desc: 'Residential, commercial and industrial real estate'
   },
   {
@@ -146,11 +146,12 @@ export function Clients() {
   return (
     <div className="w-full">
       {/* Hero */}
-      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
         
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
-          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Our Clientele Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
+        <div className="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Our Clientele Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -160,15 +161,15 @@ export function Clients() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
             >
-              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-navy-300">•</span>
-              <span className="text-navy-900 font-semibold">Clients</span>
+              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-gold/50 mx-1">•</span>
+              <span className="text-gold font-semibold tracking-[0.25em]">Clients</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
             >
               Our Clientele
             </motion.h1>
@@ -176,7 +177,7 @@ export function Clients() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               Strategic partnerships built on trust, transparency, and a shared commitment to success.
             </motion.p>
@@ -243,7 +244,9 @@ export function Clients() {
                     <img
                       src={client.img}
                       alt={client.title}
-                      className="w-full h-full object-cover transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0 gpu-layer"
                     />
                   </div>
 

@@ -34,16 +34,17 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-0 z-0 overflow-hidden"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="absolute inset-0 z-0 overflow-hidden gpu-layer"
         >
           <motion.img 
             initial={{ scale: 1.0 }}
-            animate={{ scale: 1.1 }}
-            transition={{ duration: 10, ease: "linear" }}
+            animate={{ scale: 1.05 }}
+            transition={{ duration: 8, ease: "linear" }}
             src={slides[currentSlide]} 
             alt="Corporate Scene" 
-            className="w-full h-full object-cover origin-center"
+            decoding="async"
+            className="w-full h-full object-cover origin-center gpu-layer"
           />
         </motion.div>
       </AnimatePresence>

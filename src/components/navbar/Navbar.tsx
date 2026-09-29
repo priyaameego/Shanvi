@@ -3,7 +3,7 @@ import { Link } from '@tanstack/react-router'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Phone, Globe } from 'lucide-react'
 import { cn } from '../../lib/utils'
-import logoUrl from '../../assets/shanvi.jpg'
+import logoUrl from '../../assets/logo.png'
 
 const links: { href: string; label: string; external?: boolean }[] = [
   { href: '/', label: 'Home' },
@@ -22,7 +22,7 @@ export function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40)
     }
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -53,10 +53,10 @@ export function Navbar() {
 
       <div className={cn(
         "container mx-auto px-6 md:px-12 flex items-center justify-between transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700",
-        scrolled ? "py-2" : "py-4"
+        scrolled ? "py-1" : "py-2"
       )}>
-        <Link to="/" className="flex items-center mix-blend-multiply transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 h-12 md:h-14">
-          <img src={logoUrl} alt="Shanvi Global" className={cn("w-auto object-contain transition-all duration-700 h-full scale-[1.3] md:scale-[1.5] origin-left")} style={{ clipPath: 'inset(15% 0 20% 0)' }} />
+        <Link to="/" className="flex items-center transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 h-12 md:h-14">
+          <img src={logoUrl} alt="Shanvi Global" className={cn("w-auto object-contain mix-blend-multiply transition-all duration-700 h-full scale-[1.4] md:scale-[1.6] origin-left")} style={{ clipPath: 'inset(10% 0 10% 0)' }} />
         </Link>
 
         {/* Desktop Nav */}

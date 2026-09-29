@@ -5,11 +5,12 @@ import { CheckCircle, Settings, Search, Award } from 'lucide-react'
 export function Services() {
   return (
     <div className="w-full">
-      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
         
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
-          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Services Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
+        <div className="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Services Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -19,15 +20,15 @@ export function Services() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
             >
-              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-navy-300">•</span>
-              <span className="text-navy-900 font-semibold">Services</span>
+              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-gold/50 mx-1">•</span>
+              <span className="text-gold font-semibold tracking-[0.25em]">Services</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
             >
               Services
             </motion.h1>
@@ -35,7 +36,7 @@ export function Services() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               Shanvi Global offers Best Staffing Services &amp; Executive Recruitment
             </motion.p>
@@ -49,8 +50,8 @@ export function Services() {
           <div className="text-center max-w-4xl mx-auto mb-24">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               className="text-4xl md:text-5xl font-serif text-navy-900 mb-8"
             >
               Our Best <span className="text-gold italic font-light">Services</span>
@@ -58,8 +59,8 @@ export function Services() {
             <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ delay: 0.2 }}
               className="text-navy-700 font-sans text-lg leading-relaxed font-light"
             >
@@ -78,8 +79,8 @@ export function Services() {
               <motion.div 
                 key={service.title}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: i * 0.1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="flex gap-8 bg-white text-navy-900 p-12 border border-gray-100 shadow-soft hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group relative overflow-hidden"
               >
@@ -117,8 +118,8 @@ export function Services() {
                 <motion.div 
                   key={process.step}
                   initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-10%" }}
+                  animate={{ opacity: 1, y: 0 }}
+                  
                   transition={{ delay: i * 0.15, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                   className="relative z-10 flex flex-col items-center text-center group"
                 >
@@ -144,8 +145,8 @@ export function Services() {
             <div className="text-center max-w-4xl mx-auto mb-20">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 className="text-4xl md:text-5xl font-serif text-navy-900 mb-8 uppercase tracking-widest"
               >
                 Our Specialized Sectors
@@ -153,8 +154,8 @@ export function Services() {
               <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: 0.2 }}
                 className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed"
               >
@@ -171,8 +172,8 @@ export function Services() {
                 <motion.div 
                   key={i}
                   initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: "-10%" }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  
                   transition={{ delay: i * 0.05, duration: 0.6 }}
                   className="bg-white text-navy-900 hover:bg-navy-950 hover:text-white transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 p-6 rounded-sm flex items-center border border-gray-100 shadow-sm hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] group"
                 >
@@ -184,8 +185,8 @@ export function Services() {
 
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
               className="bg-navy-950 p-16 md:p-20 text-center shadow-2xl relative overflow-hidden group"
             >

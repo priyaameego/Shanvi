@@ -1,15 +1,20 @@
 import { motion } from 'framer-motion'
 import { Link } from '@tanstack/react-router'
 import { Eye, Target, Users, Award, Shield, Lightbulb } from 'lucide-react'
+import a1Img from '../assets/a1.png'
+import a2Img from '../assets/a2.png'
+import a3Img from '../assets/a3.png'
+import annupamImg from '../assets/annupam.png'
 
 export function About() {
   return (
     <div className="w-full">
-      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
         
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
+        <div className="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -19,15 +24,15 @@ export function About() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
             >
-              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-navy-300">•</span>
-              <span className="text-navy-900 font-semibold">About Us</span>
+              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-gold/50 mx-1">•</span>
+              <span className="text-gold font-semibold tracking-[0.25em]">About Us</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
             >
               About Us
             </motion.h1>
@@ -35,7 +40,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               A dynamic and innovative force in the realm of talent acquisition.
             </motion.p>
@@ -81,7 +86,7 @@ export function About() {
               </div>
               <div className="relative aspect-[3/4] bg-navy-900 shadow-soft">
                 <img 
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" 
+                  src={annupamImg} 
                   alt="Ms. Anupama - Founder" 
                   className="w-full h-full object-cover opacity-90 mix-blend-luminosity"
                 />
@@ -102,8 +107,8 @@ export function About() {
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
             >
               <Eye className="absolute top-12 right-12 text-navy-900/5" size={120} />
@@ -120,8 +125,8 @@ export function About() {
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ delay: 0.2 }}
               className="bg-white text-navy-900 p-12 border border-gray-100 relative overflow-hidden"
             >
@@ -155,8 +160,8 @@ export function About() {
                 <motion.div 
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-10%" }}
+                  animate={{ opacity: 1, y: 0 }}
+                  
                   transition={{ delay: i * 0.1 }}
                   className="bg-white text-navy-900 p-10 text-center shadow-soft border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] duration-700"
                 >
@@ -193,8 +198,8 @@ export function About() {
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: i * 0.1 }}
                 className="bg-ivory p-8 border border-gray-100 hover:border-gold/50 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
@@ -217,8 +222,8 @@ export function About() {
                   <motion.div 
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-10%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    
                     className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
@@ -239,8 +244,8 @@ export function About() {
                   <motion.div 
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-10%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    
                     className="bg-navy-50 p-6 rounded-sm border-l-4 border-gold"
                   >
                     <h4 className="font-serif text-navy-900 text-lg mb-2">{usp.title}</h4>
@@ -275,16 +280,16 @@ export function About() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {[
-                  { name: "Arjun Sharma", role: "Creative Director", img: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80' },
-                  { name: "Priya Patel", role: "Lead Programmer", img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=800&q=80' },
-                  { name: "Rahul Verma", role: "CEO", img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80' },
+                  { name: "Arjun Sharma", role: "Creative Director", img: a1Img },
+                  { name: "Priya Patel", role: "Lead Programmer", img: a2Img },
+                  { name: "Rahul Verma", role: "CEO", img: a3Img },
                   { name: "Neha Singh", role: "HR Manager", img: 'https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?auto=format&fit=crop&w=800&q=80' }
                 ].map((member, i) => (
                   <motion.div 
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-10%" }}
+                    animate={{ opacity: 1, y: 0 }}
+                    
                     transition={{ delay: i * 0.1 }}
                     className="text-center group"
                   >

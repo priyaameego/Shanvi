@@ -10,19 +10,17 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: 'Manrope', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Manrope', 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    cursor: none;
-  }
-
-  a, button, input, .cursor-pointer {
-    cursor: none !important;
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -32,15 +30,15 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass;
+    @apply bg-white/80 border border-white/20 shadow-glass;
   }
   
   .glass-nav {
-    @apply bg-white/60 backdrop-blur-lg border-b border-white/20;
+    @apply bg-white/90 border-b border-navy-900/5;
   }
 
   .glass-dark {
-    @apply bg-navy-950/80 backdrop-blur-md border border-navy-700/50 shadow-glass;
+    @apply bg-navy-950/90 border border-navy-700/50 shadow-glass;
   }
 
   .text-gradient {
@@ -50,6 +48,11 @@
   .text-gradient-gold {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-dark via-gold to-gold-light;
   }
+
+  .gpu-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
 }
 
 ::selection {
@@ -57,51 +60,18 @@
   color: #fff;
 }
 
-/* Noise Overlay for Luxury Texture */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 9999;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.8;
-}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background: #F5F1E8;
 }
 ::-webkit-scrollbar-thumb {
   background: #C9A646;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #8F7440;
 }
 
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}

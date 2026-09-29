@@ -29,11 +29,12 @@ export function Career() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative pt-36 pb-20 bg-ivory overflow-hidden border-b border-gray-100">
+      <section className="relative pt-40 pb-28 bg-navy-950 overflow-hidden">
         
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full pointer-events-none opacity-10 md:opacity-30">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-ivory" />
+        <div className="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover opacity-30 mix-blend-luminosity gpu-layer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -43,15 +44,15 @@ export function Career() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-2 text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase mb-6"
             >
-              <Link to="/" className="text-navy-500 hover:text-navy-900 transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
-              <span className="text-navy-300">•</span>
-              <span className="text-navy-900 font-semibold">Career</span>
+              <Link to="/" className="text-gray-400 hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]">Home</Link>
+              <span className="text-gold/50 mx-1">•</span>
+              <span className="text-gold font-semibold tracking-[0.25em]">Career</span>
             </motion.nav>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-5xl md:text-7xl font-serif text-navy-900 mb-8 leading-tight"
+              className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight"
             >
               Careers
             </motion.h1>
@@ -59,7 +60,7 @@ export function Career() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-navy-700 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+              className="text-gray-300 font-sans text-lg md:text-xl font-light leading-relaxed max-w-2xl"
             >
               Grow your career with us. Explore exciting opportunities and let our experts help you navigate your professional journey.
             </motion.p>
@@ -73,8 +74,8 @@ export function Career() {
           <div className="text-center max-w-4xl mx-auto mb-20">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               className="text-4xl md:text-5xl font-serif text-white mb-6"
             >
               Why Choose <span className="text-gold italic font-light">Shanvi?</span>
@@ -82,8 +83,8 @@ export function Career() {
             <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ delay: 0.2 }}
               className="text-navy-700 font-sans text-lg leading-relaxed font-light"
             >
@@ -100,8 +101,8 @@ export function Career() {
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: i * 0.1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="bg-ivory p-12 text-center rounded-sm border border-gray-100 shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group"
               >
@@ -125,23 +126,23 @@ export function Career() {
             <div>
               <motion.h2 
                 initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, x: 0 }}
+                
                 className="text-4xl md:text-5xl font-serif mb-6"
               >
                 Current <span className="text-gold italic font-light">Openings</span>
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
-                whileInView={{ opacity: 1, scaleX: 1 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                
                 className="w-24 h-[2px] bg-gold origin-left"
               />
             </div>
             <motion.p 
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, x: 0 }}
+              
               className="text-navy-600 font-sans font-light max-w-md"
             >
               Discover roles that match your expertise. We are constantly updating our board with exclusive opportunities.
@@ -153,8 +154,8 @@ export function Career() {
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: i * 0.1, duration: 0.6 }}
                 className="bg-white text-navy-900 border border-gray-100 p-6 md:p-10 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:border-gold/30 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 group rounded-sm flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-start md:items-center"
               >
@@ -232,7 +233,7 @@ export function Career() {
                   ) : (
                     <>
                       <Briefcase className="mx-auto text-navy-600 mb-4 group-hover:text-gold transition-colors ease-[cubic-bezier(0.22,1,0.36,1)]" size={32} />
-                      <p className="text-navy-700 font-sans font-light">Drag and drop your resume here, or <span className="text-navy-900 font-semibold">browse</span></p>
+                      <p className="text-navy-700 font-sans font-light">Drag and drop your resume here, or <span className="text-gold font-semibold tracking-[0.25em]">browse</span></p>
                       <p className="text-xs text-navy-600 mt-2">Supported formats: PDF, DOC, DOCX (Max 5MB)</p>
                     </>
                   )}

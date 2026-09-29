@@ -28,15 +28,15 @@ export function Home() {
             <div className="lg:col-span-5 relative z-20 lg:-mr-12 xl:-mr-24 pt-10">
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
-                whileInView={{ opacity: 1, scaleX: 1 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                
                 transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
                 className="w-24 h-[2px] bg-gold mb-8 origin-left"
               />
               <motion.h2 
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-serif text-navy-900 leading-tight mb-8"
               >
@@ -44,8 +44,8 @@ export function Home() {
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: 0.4, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-lg text-navy-700 font-sans leading-relaxed mb-6 font-light"
               >
@@ -53,8 +53,8 @@ export function Home() {
               </motion.p>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: 0.5, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-lg text-navy-700 font-sans leading-relaxed mb-12 font-light"
               >
@@ -62,8 +62,8 @@ export function Home() {
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: 0.6, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               >
                 <a 
@@ -81,8 +81,8 @@ export function Home() {
             
             <motion.div 
               initial={{ opacity: 0, scale: 0.9, y: 50 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="lg:col-span-7 relative z-10 mt-12 lg:mt-0"
             >
@@ -90,9 +90,11 @@ export function Home() {
                 <div className="absolute top-10 -left-10 w-full h-full border border-gold/30 z-0 rounded-2xl hidden md:block" />
                 <div className="absolute inset-0 bg-navy-900 rounded-2xl overflow-hidden shadow-2xl z-10 group">
                   <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80" 
+                    src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" 
                     alt="Professional Team" 
-                    className="object-cover w-full h-full opacity-90 transform group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out"
+                    loading="lazy"
+                    decoding="async"
+                    className="object-cover w-full h-full opacity-90 transform group-hover:scale-105 transition-transform duration-700 ease-out gpu-layer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-navy-950/60 to-transparent mix-blend-multiply transition-opacity ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 group-hover:opacity-40" />
                 </div>
@@ -100,8 +102,8 @@ export function Home() {
                 {/* Floating Glassmorphism Badge */}
                 <motion.div 
                   initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-10%" }}
+                  animate={{ opacity: 1, x: 0 }}
+                  
                   transition={{ delay: 0.8, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute -bottom-8 md:-left-12 bg-white/90 backdrop-blur-xl p-6 shadow-2xl border border-white z-30 rounded-xl max-w-[200px]"
                 >
@@ -129,14 +131,14 @@ export function Home() {
             <div className="max-w-2xl">
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
-                whileInView={{ opacity: 1, scaleX: 1 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                
                 className="w-24 h-[2px] bg-gold mb-8 origin-left"
               />
               <motion.h2 
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-4xl md:text-6xl font-serif text-white mb-6"
               >
@@ -144,8 +146,8 @@ export function Home() {
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-gray-400 font-sans text-lg md:text-xl leading-relaxed font-light"
               >
@@ -154,8 +156,8 @@ export function Home() {
             </div>
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, x: 0 }}
+              
               className="flex-shrink-0"
             >
               <a href="/ourservices" className="inline-flex items-center gap-4 text-gold uppercase tracking-widest text-sm font-semibold hover:text-white transition-colors ease-[cubic-bezier(0.22,1,0.36,1)] group">
@@ -175,8 +177,8 @@ export function Home() {
               <motion.div 
                 key={service.title}
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, y: 0 }}
+                
                 transition={{ delay: i * 0.15, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="group relative bg-navy-900/30 backdrop-blur-md border border-white/5 p-12 lg:p-16 hover:bg-navy-900/60 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-700 overflow-hidden rounded-2xl"
               >
@@ -207,15 +209,15 @@ export function Home() {
             
             <motion.div 
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="relative order-2 lg:order-1"
             >
               <div className="absolute -inset-4 bg-ivory rounded-3xl -rotate-3 z-0 hidden md:block" />
               <div className="absolute -inset-4 bg-gold/10 rounded-3xl rotate-3 z-0 hidden md:block" />
               <div className="aspect-[4/3] bg-navy-950 overflow-hidden relative shadow-2xl z-10 group rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" alt="About Us" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us" loading="lazy" decoding="async" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out gpu-layer" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>
@@ -225,15 +227,15 @@ export function Home() {
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, x: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="order-1 lg:order-2"
             >
               <motion.div
                 initial={{ opacity: 0, scaleX: 0 }}
-                whileInView={{ opacity: 1, scaleX: 1 }}
-                viewport={{ once: true, margin: "-10%" }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                
                 className="w-24 h-[2px] bg-gold mb-8 origin-left"
               />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 text-navy-900 leading-tight">
@@ -276,8 +278,8 @@ export function Home() {
             
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="md:col-span-7 lg:col-span-6"
             >
@@ -317,8 +319,8 @@ export function Home() {
 
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
               className="md:col-span-5 lg:col-span-5 lg:col-start-8 flex items-center"
             >
@@ -356,12 +358,12 @@ export function Home() {
             
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="bg-navy-900 text-white p-16 md:p-20 text-center shadow-2xl rounded-3xl relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-luminosity group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=1000&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-luminosity group-hover:scale-110 transition-transform ease-[cubic-bezier(0.22,1,0.36,1)] duration-[5s] ease-out" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-900/90 to-navy-900/80" />
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white/5 backdrop-blur-sm mb-10 border border-white/10 group-hover:border-gold/50 group-hover:bg-gold/10 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 shadow-xl">
@@ -382,8 +384,8 @@ export function Home() {
 
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
               className="bg-ivory p-16 md:p-20 text-center shadow-xl border border-gray-100 rounded-3xl relative overflow-hidden group hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000"
             >
