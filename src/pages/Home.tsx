@@ -93,7 +93,7 @@ export function Home() {
                   <img 
                     src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" 
                     alt="Professional Team" 
-                    loading="lazy"
+                    fetchPriority="high"
                     decoding="async"
                     className="object-cover w-full h-full opacity-90 transform group-hover:scale-105 transition-transform duration-700 ease-out gpu-layer"
                   />
@@ -215,7 +215,7 @@ export function Home() {
               <div className="absolute -inset-4 bg-white rounded-3xl -rotate-3 z-0 hidden md:block" />
               <div className="absolute -inset-4 bg-gold/10 rounded-3xl rotate-3 z-0 hidden md:block" />
               <div className="aspect-[4/3] bg-navy-900 overflow-hidden relative shadow-2xl z-10 group rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us" loading="lazy" decoding="async" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out gpu-layer" />
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us" fetchPriority="high" decoding="async" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out gpu-layer" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>
