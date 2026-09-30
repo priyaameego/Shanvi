@@ -186,7 +186,7 @@ export function TestimonialCarousel() {
 export function FinalCTA() {
   return (
     <section className="py-24 bg-[#102A43] relative overflow-hidden rounded-t-[40px] md:rounded-t-[80px] mt-12 shadow-[0_-20px_40px_rgba(0,0,0,0.1)]">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center mix-blend-luminosity" />
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center mix-blend-luminosity" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#102A43] via-[#102A43]/90 to-[#102A43]/80" />
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <motion.h2 

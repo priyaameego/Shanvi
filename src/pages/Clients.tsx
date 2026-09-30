@@ -188,7 +188,7 @@ export function Clients() {
       {/* Intro Text */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center space-y-5">
+          <div className="max-w-4xl mx-auto text-left space-y-5">
             <h2 className="text-3xl font-serif text-navy-900">
               Valuable clients to whom we are serving
             </h2>
@@ -273,7 +273,7 @@ export function Clients() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-24 bg-background text-center border-t border-accent/10">
+      <section className="py-24 bg-background text-left border-t border-accent/10">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-serif mb-4 text-navy-900">Join Our Growing Client Network</h2>
           <p className="text-charcoal font-sans max-w-xl mx-auto mb-8 text-lg">

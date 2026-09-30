@@ -71,7 +71,7 @@ export function Career() {
       {/* Why Shanvi Section */}
       <section className="py-32 bg-background">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center max-w-4xl mx-auto mb-20">
+          <div className="text-left max-w-4xl mx-auto mb-20">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ export function Career() {
             >
               Why Choose <span className="text-accent italic font-light">Shanvi?</span>
             </motion.h2>
-            <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
+            <div className="w-24 h-[1px] bg-accent mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -184,7 +184,7 @@ export function Career() {
           <div className="max-w-4xl mx-auto bg-white p-6 sm:p-12 md:p-20 border border-[#E4EAF0] rounded-[24px] shadow-[0_10px_30px_rgba(16,42,67,0.06)] relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 h-48 bg-accent/10 rounded-bl-full pointer-events-none" />
             
-            <div className="text-center mb-12 relative z-10">
+            <div className="text-left mb-12 relative z-10">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-[16px] bg-[#EBF2FA] border border-[#165396]/10 text-[#165396] mb-8 shadow-sm">
                 <Upload size={32} className="text-[#165396]" />
               </div>

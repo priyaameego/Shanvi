@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react'
 
 // Professional Corporate/Recruitment Images
 const slides = [
-  "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2000&auto=format&fit=crop", // Indian corporate team
-  "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2000&auto=format&fit=crop", // Indian meeting
-  "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2000&auto=format&fit=crop", // Indian corporate woman
-  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop", // Indian professionals
-  "https://images.unsplash.com/photo-1573167440381-8b0101b0b7ab?q=80&w=2000&auto=format&fit=crop"  // Indian recruitment
+  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop", // Office coworkers
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop", // Team collaboration
+  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop", // Business meeting
+  "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000&auto=format&fit=crop", // Team training
+  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop"  // Startup team
 ]
 
 

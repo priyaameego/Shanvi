@@ -51,9 +51,9 @@ export function About() {
 
       <section className="py-20 bg-[#F6F8FB] relative overflow-hidden">
         <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="max-w-5xl mx-auto bg-white p-10 md:p-16 rounded-[24px] border border-[#E4EAF0] shadow-[0_10px_30px_rgba(16,42,67,0.06)] space-y-8 text-center">
+          <div className="max-w-5xl mx-auto bg-white p-10 md:p-16 rounded-[24px] border border-[#E4EAF0] shadow-[0_10px_30px_rgba(16,42,67,0.06)] space-y-8 text-left md:text-justify">
             <h2 className="text-3xl font-serif text-[#102A43] mb-6">About Us</h2>
-            <div className="w-12 h-[2px] bg-[#C6A15B] mx-auto mb-8 rounded-full" />
+            <div className="w-12 h-[2px] bg-[#C6A15B] mb-8 rounded-full" />
             <p className="text-charcoal leading-relaxed text-lg font-sans">
               Welcome to Shanvi Global Recruitment Services, a dynamic and innovative force in the realm of talent acquisition. Established in 2005, we have evolved into a trusted partner, adept at connecting exceptional talent with unparalleled opportunities. Our journey commenced as a local recruitment service provider, and through steadfast commitment and unwavering dedication, we have expanded our footprint to serve organizations nationwide, reaching across borders to the USA, Middle East, and LATAM countries.
             </p>
@@ -185,7 +185,7 @@ export function About() {
       <section className="py-16 bg-white text-navy-900 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12">
           
-          <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="text-left max-w-3xl mx-auto mb-20">
             <h2 className="text-4xl font-serif text-navy-900 mb-6">Why Choose Shanvi Global?</h2>
             <p className="text-charcoal font-sans text-lg leading-relaxed">
               We have a well-demonstrated track record of delivering high-value, low-cost outsourcing process solutions that can highly benefit your business. The specialty of our services is that the solutions delivered by us convert into long term strategic advantages for our clients.
@@ -272,7 +272,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="mt-16 text-center max-w-4xl mx-auto bg-white p-8 border border-accent/20">
+          <div className="mt-16 text-left max-w-4xl mx-auto bg-white p-8 border border-accent/20">
              <p className="text-navy-900 font-serif text-xl italic">
                Choose Shanvi for a partner dedicated to understanding your specific needs, providing tailored solutions, and delivering exceptional results in the dynamic landscape of talent acquisition.
              </p>
@@ -280,7 +280,7 @@ export function About() {
 
           {/* Our Team */}
             <div className="mt-32">
-              <div className="text-center mb-16">
+              <div className="text-left mb-16">
                 <h3 className="text-4xl font-serif text-navy-900">Our Team</h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

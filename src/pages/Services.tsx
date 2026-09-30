@@ -47,7 +47,7 @@ export function Services() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12">
           
-          <div className="text-center max-w-4xl mx-auto mb-24">
+          <div className="text-left max-w-4xl mx-auto mb-24">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export function Services() {
             >
               Our Best <span className="text-accent italic font-light">Services</span>
             </motion.h2>
-            <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
+            <div className="w-24 h-[1px] bg-accent mb-8" />
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -101,9 +101,9 @@ export function Services() {
 
           {/* Candidate Selection Process */}
           <div className="mt-40 mb-32">
-            <div className="text-center max-w-4xl mx-auto mb-20">
+            <div className="text-left max-w-4xl mx-auto mb-20">
               <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-8">Candidate Selection <span className="text-accent italic font-light">Process</span></h2>
-              <div className="w-24 h-[1px] bg-accent mx-auto" />
+              <div className="w-24 h-[1px] bg-accent" />
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
@@ -143,7 +143,7 @@ export function Services() {
 
           {/* Specialized Sectors */}
           <div className="mt-40 border-t border-accent/20 pt-32">
-            <div className="text-center max-w-4xl mx-auto mb-20">
+            <div className="text-left max-w-4xl mx-auto mb-20">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export function Services() {
               >
                 Our Specialized Sectors
               </motion.h2>
-              <div className="w-24 h-[1px] bg-accent mx-auto mb-8" />
+              <div className="w-24 h-[1px] bg-accent mb-8" />
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
