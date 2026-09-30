@@ -10,10 +10,19 @@ export function Contact() {
     <div className="w-full">
             <section className="relative pt-28 pb-10 bg-[#F6F8FB] overflow-hidden">
         
-        <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80" alt="Contact Us Background" className="w-full h-full object-cover opacity-25 gpu-layer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#F6F8FB]/75 via-[#F6F8FB]/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#F6F8FB]/75 via-transparent to-transparent" />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <motion.img 
+            initial={{ scale: 1.0, x: "0%", y: "0%" }}
+            animate={{ scale: 1.1, x: "-1%", y: "-1%" }}
+            transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1200&q=80" 
+            alt="Contact Us Background" 
+            fetchPriority="high" 
+            decoding="async" 
+            className="w-full h-full object-cover" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F6F8FB] via-[#F6F8FB]/90 to-transparent md:w-3/4 lg:w-2/3 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#F6F8FB] via-transparent to-transparent opacity-80 z-10" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">

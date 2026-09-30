@@ -1,21 +1,30 @@
 import { motion } from 'framer-motion'
 import { Link } from '@tanstack/react-router'
 import { Eye, Target, Users, Award, Shield, Lightbulb } from 'lucide-react'
-import a1Img from '../assets/a1.png'
-import a2Img from '../assets/a2.png'
-import a3Img from '../assets/a3.png'
+import team1Img from '../assets/team1.jpg'
+import team2Img from '../assets/team2.jpg'
+import team3Img from '../assets/team3.jpg'
 import annupamImg from '../assets/annupam.png'
-import a5Img from '../assets/a5.png'
+import team4Img from '../assets/team4.jpg'
 
 export function About() {
   return (
     <div className="w-full">
       <section className="relative pt-28 pb-10 bg-white overflow-hidden">
         
-        <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <motion.img 
+            initial={{ scale: 1.0, x: "0%", y: "0%" }}
+            animate={{ scale: 1.1, x: "-1%", y: "-1%" }}
+            transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80" 
+            alt="About Us Background" 
+            fetchPriority="high" 
+            decoding="async" 
+            className="w-full h-full object-cover" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent md:w-3/4 lg:w-2/3 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-80 z-10" />
         </div>
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -87,11 +96,11 @@ export function About() {
                   At Shanvi, Ms. Anupama's vision and leadership drive our commitment to excellence, ensuring that we not only meet but exceed the expectations of our clients. With a blend of experience, education, and a passion for delivering exceptional recruitment solutions, Ms. Anupama epitomizes the ethos of Shanvi as a trailblazer in the world of talent acquisition.
                 </p>
               </div>
-              <div className="relative aspect-[3/4] bg-white shadow-soft">
+              <div className="relative aspect-[3/4] bg-[#F6F8FB] shadow-soft max-w-sm mx-auto overflow-hidden rounded-xl">
                 <img 
                   src={annupamImg} 
                   alt="Ms. Anupama - Founder" 
-                  className="w-full h-full object-cover opacity-90 "
+                  className="w-full h-full object-contain opacity-100"
                 />
                 <div className="absolute inset-0 bg-accent/10" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent pt-24">
@@ -285,10 +294,10 @@ export function About() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {[
-                  { name: "Arjun Sharma", role: "Creative Director", img: a1Img },
-                  { name: "Priya Patel", role: "Lead Programmer", img: a2Img },
-                  { name: "Rahul Verma", role: "CEO", img: a3Img },
-                  { name: "Neha Singh", role: "HR Manager", img: a5Img }
+                  { name: "Arjun Sharma", role: "Creative Director", img: team1Img },
+                  { name: "Priya Patel", role: "Lead Programmer", img: team2Img },
+                  { name: "Rahul Verma", role: "CEO", img: team3Img },
+                  { name: "Neha Singh", role: "HR Manager", img: team4Img }
                 ].map((member, i) => (
                   <motion.div 
                     key={i}
