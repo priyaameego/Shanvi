@@ -43,7 +43,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'Manrope', 'sans-serif'],
-        serif: ['Cormorant Garamond', 'Playfair Display', 'serif'],
+        serif: ['Fraunces', 'Playfair Display', 'serif'],
       },
       boxShadow: {
         'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
