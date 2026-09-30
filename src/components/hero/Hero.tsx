@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react'
 
 // Professional Corporate/Recruitment Images
 const slides = [
-  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop", // Office coworkers
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop", // Team collaboration
-  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop", // Business meeting
-  "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop", // Team training
-  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop"  // Startup team
+  "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1200&auto=format&fit=crop", // Professional work
+  "https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1200&auto=format&fit=crop", // Job interview
+  "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop", // Handshake close up
+  "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop", // Business people talking
+  "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1200&auto=format&fit=crop"  // Modern office discussion
 ]
 
 
@@ -38,9 +38,9 @@ export function Hero() {
           className="absolute inset-0 z-0 overflow-hidden gpu-layer"
         >
           <motion.img 
-            initial={{ scale: 1.0 }}
-            animate={{ scale: 1.05 }}
-            transition={{ duration: 8, ease: "linear" }}
+            initial={{ scale: 1.0, x: "0%", y: "0%" }}
+            animate={{ scale: 1.15, x: "-3%", y: "-1%" }}
+            transition={{ duration: 10, ease: "linear" }}
             src={slides[currentSlide]} 
             alt="Corporate Scene" 
             decoding="async"

@@ -87,7 +87,7 @@ export function Home() {
                 <div className="absolute top-10 -left-10 w-full h-full border border-accent/30 z-0 rounded-2xl hidden md:block" />
                 <div className="absolute inset-0 bg-navy-900 rounded-2xl overflow-hidden shadow-2xl z-10 group">
                   <img 
-                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" 
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" 
                     alt="Professional Team" 
                     fetchPriority="high"
                     decoding="async"
