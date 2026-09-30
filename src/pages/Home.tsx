@@ -87,7 +87,7 @@ export function Home() {
                 <div className="absolute top-10 -left-10 w-full h-full border border-accent/30 z-0 rounded-2xl hidden md:block" />
                 <div className="absolute inset-0 bg-navy-900 rounded-2xl overflow-hidden shadow-2xl z-10 group">
                   <img 
-                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80" 
+                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" 
                     alt="Professional Team" 
                     fetchPriority="high"
                     decoding="async"
@@ -207,7 +207,7 @@ export function Home() {
               <div className="absolute -inset-4 bg-white rounded-3xl -rotate-3 z-0 hidden md:block" />
               <div className="absolute -inset-4 bg-gold/10 rounded-3xl rotate-3 z-0 hidden md:block" />
               <div className="aspect-[4/3] bg-navy-900 overflow-hidden relative shadow-2xl z-10 group rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" alt="About Us" fetchPriority="high" decoding="async" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out gpu-layer" />
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="About Us" fetchPriority="high" decoding="async" className="w-full h-full object-cover opacity-90 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out gpu-layer" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <p className="text-white text-lg font-serif italic mb-2 font-light">"Converting solutions into long term strategic advantages."</p>
@@ -326,7 +326,7 @@ export function Home() {
                   <div className="flex items-center gap-6 border-t border-gray-100 pt-8 relative z-10">
                     <div className="relative">
                       <div className="absolute inset-0 border-2 border-accent rounded-full scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000" />
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" alt="Marc Cooper" className="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 relative z-10" />
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Marc Cooper" className="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all ease-[cubic-bezier(0.22,1,0.36,1)] duration-1000 relative z-10" />
                     </div>
                     <div>
                       <h4 className="font-serif text-xl text-navy-900 mb-1">Marc Cooper</h4>

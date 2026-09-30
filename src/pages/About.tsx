@@ -13,7 +13,7 @@ export function About() {
       <section className="relative pt-28 pb-10 bg-white overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80" alt="About Us Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>
@@ -94,9 +94,9 @@ export function About() {
                   className="w-full h-full object-cover opacity-90 "
                 />
                 <div className="absolute inset-0 bg-accent/10" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-900 to-transparent">
-                  <h3 className="text-2xl font-serif text-navy-900 mb-1">Ms. Anupama</h3>
-                  <p className="text-accent font-sans uppercase tracking-widest text-sm">Founder &amp; Director</p>
+                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent pt-24">
+                  <h3 className="text-3xl font-serif text-white mb-2 drop-shadow-lg">Ms. Anupama</h3>
+                  <p className="text-[#C6A15B] font-sans uppercase tracking-widest text-sm font-bold drop-shadow-md">Founder &amp; Director</p>
                 </div>
               </div>
             </div>

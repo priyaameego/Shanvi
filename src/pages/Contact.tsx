@@ -11,7 +11,7 @@ export function Contact() {
             <section className="relative pt-28 pb-10 bg-[#F6F8FB] overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" alt="Contact Us Background" className="w-full h-full object-cover opacity-25 gpu-layer" />
+          <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80" alt="Contact Us Background" className="w-full h-full object-cover opacity-25 gpu-layer" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#F6F8FB]/75 via-[#F6F8FB]/50 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#F6F8FB]/75 via-transparent to-transparent" />
         </div>

@@ -149,7 +149,7 @@ export function Clients() {
       <section className="relative pt-28 pb-10 bg-background overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80" alt="Our Clientele Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80" alt="Our Clientele Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>

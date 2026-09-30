@@ -32,7 +32,7 @@ export function Career() {
       <section className="relative pt-28 pb-10 bg-background overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80" alt="Careers Background" className="w-full h-full object-cover opacity-25  gpu-layer" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/50 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-white/75 via-transparent to-transparent" />
         </div>

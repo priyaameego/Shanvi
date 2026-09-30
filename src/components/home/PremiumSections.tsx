@@ -127,9 +127,9 @@ export function HiringProcess() {
 
 export function TestimonialCarousel() {
   const reviews = [
-    { name: "Sarah Jenkins", role: "HR Director", company: "TechCorp", text: "Shanvi Global transformed our hiring process. Their candidates are always top-tier and their team is a pleasure to work with.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80" },
-    { name: "Michael Chen", role: "CEO", company: "Innovate AI", text: "We found our entire leadership team through Shanvi. Exceptionally professional service that understands exactly what modern businesses need.", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80" },
-    { name: "Priya Sharma", role: "VP Operations", company: "Global Logistics", text: "The speed and accuracy of their recruitment is unmatched in the industry. They are our go-to partners for all executive hiring.", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80" }
+    { name: "Sarah Jenkins", role: "HR Director", company: "TechCorp", text: "Shanvi Global transformed our hiring process. Their candidates are always top-tier and their team is a pleasure to work with.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" },
+    { name: "Michael Chen", role: "CEO", company: "Innovate AI", text: "We found our entire leadership team through Shanvi. Exceptionally professional service that understands exactly what modern businesses need.", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" },
+    { name: "Priya Sharma", role: "VP Operations", company: "Global Logistics", text: "The speed and accuracy of their recruitment is unmatched in the industry. They are our go-to partners for all executive hiring.", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" }
   ];
   
   const [current, setCurrent] = useState(0);
@@ -186,7 +186,7 @@ export function TestimonialCarousel() {
 export function FinalCTA() {
   return (
     <section className="py-24 bg-[#102A43] relative overflow-hidden rounded-t-[40px] md:rounded-t-[80px] mt-12 shadow-[0_-20px_40px_rgba(0,0,0,0.1)]">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center mix-blend-luminosity" />
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80')] opacity-10 bg-cover bg-center mix-blend-luminosity" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#102A43] via-[#102A43]/90 to-[#102A43]/80" />
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <motion.h2 
